@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="w4y6IhvmtrjHlGB1j8Ks">
-    <mxGraphModel dx="2415" dy="1980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2272" dy="1856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -343,6 +343,12 @@
         </mxCell>
         <mxCell id="fyuTzEbOKJZI9zh-kHTf-105" parent="fyuTzEbOKJZI9zh-kHTf-104" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="BM25 vs TF-IDF&lt;p data-start=&quot;138&quot; data-end=&quot;287&quot;&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="30" width="220" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EKvDkQm1GslcNw33HAVq-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="* &lt;b&gt;splitlines(keepends=True)&lt;/b&gt; divide un texto en una lista de líneas. Con (keepends=True) se conservan los caracteres de fin de línea(\n, \r\n, etc).&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;*&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" x="820" y="-430" as="geometry" />
+        </mxCell>
+        <mxCell id="EKvDkQm1GslcNw33HAVq-2" edge="1" parent="1" source="fyuTzEbOKJZI9zh-kHTf-65" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="EKvDkQm1GslcNw33HAVq-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
