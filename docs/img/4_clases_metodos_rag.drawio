@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="DulxX5qziRWTqTe_5XR2">
+    <mxGraphModel dx="898" dy="1163" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qyNOW4T6F0ZzgMOeReOv-7" edge="1" parent="1" source="qyNOW4T6F0ZzgMOeReOv-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="qyNOW4T6F0ZzgMOeReOv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qyNOW4T6F0ZzgMOeReOv-8" edge="1" parent="1" source="qyNOW4T6F0ZzgMOeReOv-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="qyNOW4T6F0ZzgMOeReOv-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qyNOW4T6F0ZzgMOeReOv-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="MarkdownChunker" vertex="1">
+          <mxGeometry height="30" width="150" x="120" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="qyNOW4T6F0ZzgMOeReOv-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="__init__" vertex="1">
+          <mxGeometry height="30" width="80" x="325" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qyNOW4T6F0ZzgMOeReOv-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;_split_long_text&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Divide un texto que supera el max_size_chunk_size, buscando primero puntos(.) y aplicando un corte de emergencia por palabras/espacios si una frase es demasiado largo.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="250" x="240" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="qyNOW4T6F0ZzgMOeReOv-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;b&gt;parts &lt;/b&gt;es la lista que devuelve re.split(r&#39;(\.)&#39;.. &lt;b&gt;part &lt;/b&gt;es solo un elemento de esa lista mientras lo vas recorriendo con el &lt;b&gt;for part..&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;temp_chunk &lt;/b&gt;es tu mochila temporal&lt;b&gt;. &lt;/b&gt;Vas metiendo frase1, luego frase2, y vas midiendo cuánto ocupan juntos....&lt;b&gt;&lt;br&gt;emergency_chunk &lt;/b&gt;caso extremo de temp_chunk (modo emergencia). La estrategia normal es por puntos, pero si encuentras una frase infinitamente grande. quen o hay punto, se rompe la frase y vas usando e_c, como mochila cortando con los espacios hsta rozar el&amp;nbsp; limite permitido.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="260" width="410" x="240" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="qyNOW4T6F0ZzgMOeReOv-11" edge="1" parent="1" source="qyNOW4T6F0ZzgMOeReOv-5" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.396;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="qyNOW4T6F0ZzgMOeReOv-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
