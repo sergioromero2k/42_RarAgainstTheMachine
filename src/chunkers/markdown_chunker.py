@@ -13,6 +13,23 @@ class MarkdownChunker(BaseChunker):
 
     patron_head = re.compile(r'^[]{0,3}#{1,6}\s+')
 
+    def _save_fragment(
+            self,
+            fragments: list,
+            text: str,
+            start_offset: int
+    ) -> int:
+        """"""
+        if not text:
+            return start_offset
+        end_offset = start_offset + len(text)
+        fragments.append({
+            'text': text,
+            'start': start_offset,
+            'end': end_offset
+        })
+        return end_offset
+
     def _split_long_text(self, text: str, base_start: int, max_chunk_size: int) -> List[dict]:
         """"""
         fragments = []
@@ -25,8 +42,9 @@ class MarkdownChunker(BaseChunker):
             if part == '.':
                 sentences_info.append(temp_current_sentence)
                 temp_current_sentence = ""
-            if temp_current_sentence:
-                sentences_info.append(temp_current_sentence)
+
+        if temp_current_sentence:
+            sentences_info.append(temp_current_sentence)
 
         temp_chunk = ""
         chunk_start_offset = base_start
@@ -34,15 +52,8 @@ class MarkdownChunker(BaseChunker):
         for sentence in sentences_info:
             if len(sentence) > max_chunk_size:
                 if temp_chunk:
-                    chunk_end_offset = chunk_start_offset + len(temp_chunk)
-                    fragments.append({
-                        fragments.append({
-                            'text': temp_chunk,
-                            'start': chunk_start_offset,
-                            'end': chunk_start_offset
-                        })
-                    })
-                    chunk_start_offset = chunk_end_offset
+                    chunk_start_offset = self._save_fragment(
+                        fragments, temp_chunk, chunk_start_offset)
                     temp_chunk = ""
 
                 words = re.split(r'(\s+)', sentence)
@@ -50,9 +61,29 @@ class MarkdownChunker(BaseChunker):
 
                 for word in words:
                     if len(emergency_chunk) + len(word) <= max_chunk_size:
-                        
+                        emergency_chunk += word
+                    else:
+                        if emergency_chunk:
+                            chunk_start_offset = self._save_fragment(
+                                fragments, emergency_chunk, chunk_start_offset)
+                            emergency_chunk = word
 
+                if emergency_chunk:
+                    chunk_start_offset = self._save_fragment(
+                        fragments, emergency_chunk, chunk_start_offset)
+            else:
+                if len(temp_chunk) + len(sentence) <= max_chunk_size:
+                    temp_chunk += sentence
+                else:
+                    if temp_chunk:
+                        chunk_start_offset = self._save_fragment(
+                            fragments, temp_chunk, chunk_start_offset)
+                    temp_chunk = sentence
+        if temp_chunk:
+            chunk_start_offset = self._save_fragment(
+                fragments, temp_chunk, chunk_start_offset)
 
+        return fragments
 
     def chunk(
             self,
