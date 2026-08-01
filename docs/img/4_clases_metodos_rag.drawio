@@ -1,28 +1,76 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="Page-1" id="DulxX5qziRWTqTe_5XR2">
-    <mxGraphModel dx="898" dy="1163" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram name="Page-1" id="MTp3dkUilv4MkuCPW8iy">
+    <mxGraphModel dx="1732" dy="1056" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="qyNOW4T6F0ZzgMOeReOv-7" edge="1" parent="1" source="qyNOW4T6F0ZzgMOeReOv-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="qyNOW4T6F0ZzgMOeReOv-4">
+        <mxCell id="JWVcpfvBtUJJNNRV4fJH-1" edge="1" parent="1" source="JWVcpfvBtUJJNNRV4fJH-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="JWVcpfvBtUJJNNRV4fJH-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qyNOW4T6F0ZzgMOeReOv-8" edge="1" parent="1" source="qyNOW4T6F0ZzgMOeReOv-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="qyNOW4T6F0ZzgMOeReOv-5">
+        <mxCell id="JWVcpfvBtUJJNNRV4fJH-2" edge="1" parent="1" source="JWVcpfvBtUJJNNRV4fJH-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="JWVcpfvBtUJJNNRV4fJH-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qyNOW4T6F0ZzgMOeReOv-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="MarkdownChunker" vertex="1">
-          <mxGeometry height="30" width="150" x="120" y="190" as="geometry" />
+        <mxCell id="JWVcpfvBtUJJNNRV4fJH-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="MarkdownChunker" vertex="1">
+          <mxGeometry height="30" width="150" x="40" y="215" as="geometry" />
         </mxCell>
-        <mxCell id="qyNOW4T6F0ZzgMOeReOv-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="__init__" vertex="1">
+        <mxCell id="JWVcpfvBtUJJNNRV4fJH-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="__init__" vertex="1">
           <mxGeometry height="30" width="80" x="325" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="qyNOW4T6F0ZzgMOeReOv-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;_split_long_text&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Divide un texto que supera el max_size_chunk_size, buscando primero puntos(.) y aplicando un corte de emergencia por palabras/espacios si una frase es demasiado largo.&lt;/div&gt;" vertex="1">
-          <mxGeometry height="170" width="250" x="240" y="260" as="geometry" />
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-5" edge="1" parent="1" source="JWVcpfvBtUJJNNRV4fJH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KK8gMwIVhVp7HBfC7dF9-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qyNOW4T6F0ZzgMOeReOv-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;b&gt;parts &lt;/b&gt;es la lista que devuelve re.split(r&#39;(\.)&#39;.. &lt;b&gt;part &lt;/b&gt;es solo un elemento de esa lista mientras lo vas recorriendo con el &lt;b&gt;for part..&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;temp_chunk &lt;/b&gt;es tu mochila temporal&lt;b&gt;. &lt;/b&gt;Vas metiendo frase1, luego frase2, y vas midiendo cuánto ocupan juntos....&lt;b&gt;&lt;br&gt;emergency_chunk &lt;/b&gt;caso extremo de temp_chunk (modo emergencia). La estrategia normal es por puntos, pero si encuentras una frase infinitamente grande. quen o hay punto, se rompe la frase y vas usando e_c, como mochila cortando con los espacios hsta rozar el&amp;nbsp; limite permitido.&lt;/div&gt;" vertex="1">
-          <mxGeometry height="260" width="410" x="240" y="480" as="geometry" />
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-8" edge="1" parent="1" source="JWVcpfvBtUJJNNRV4fJH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KK8gMwIVhVp7HBfC7dF9-7">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qyNOW4T6F0ZzgMOeReOv-11" edge="1" parent="1" source="qyNOW4T6F0ZzgMOeReOv-5" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.396;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="qyNOW4T6F0ZzgMOeReOv-10">
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-14" edge="1" parent="1" source="JWVcpfvBtUJJNNRV4fJH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KK8gMwIVhVp7HBfC7dF9-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JWVcpfvBtUJJNNRV4fJH-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;_split_long_text&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Divide un texto que supera el &lt;b&gt;max_size_chunk_size&lt;/b&gt;, buscando primero puntos(.) y aplicando un corte de emergencia por palabras/espacios si una frase es demasiado largo.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="250" x="270" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="JWVcpfvBtUJJNNRV4fJH-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;parts &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;es la lista que devuelve &lt;b&gt;re.split(r&#39;(\.)&#39;..&lt;/b&gt; &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;part &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;es solo un elemento de esa lista mientras lo vas recorriendo con el &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;for part..&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;temp_chunk &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;es tu mochila temporal&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;. &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Vas metiendo frase1, luego frase2, y vas midiendo cuánto ocupan juntos....&lt;/span&gt;&lt;/div&gt;&lt;b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;emergency_chunk &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;caso extremo de temp_chunk (modo emergencia). La estrategia normal es por puntos, pero si encuentras una frase infinitamente grande. que no hay punto, se rompe la frase y vas usando e_c, como mochila cortando con los espacios hsta rozar el&amp;nbsp; limite permitido.&lt;/span&gt;&lt;/div&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="450" x="-210" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="JWVcpfvBtUJJNNRV4fJH-7" edge="1" parent="1" source="JWVcpfvBtUJJNNRV4fJH-5" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.396;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="JWVcpfvBtUJJNNRV4fJH-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;Lista donde se van a guardar todos lso fragmentos definitivos ya troceados.&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="250" x="760" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-2" edge="1" parent="1" source="JWVcpfvBtUJJNNRV4fJH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.544;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.958;exitY=-0.006;exitDx=0;exitDy=0;exitPerimeter=0;" target="KK8gMwIVhVp7HBfC7dF9-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; temp_current_sentence:&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;sentences_info.append(temp_current_sentence)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Red de seguridad: si el texto no terminaba con punto, guarda lo último que haya quedado suelto.&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="390" x="600" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="words = re.split(&lt;span class=&quot;hljs-string&quot;&gt;r&#39;(\s+)&#39;&lt;/span&gt;, sentence)&amp;nbsp;&lt;div&gt;emergency_chunk = &lt;span class=&quot;hljs-string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span class=&quot;hljs-comment&quot;&gt;&lt;b&gt;Pasa a modo emergencia: pica la frase gigante palabra por palabra usando los espacios.&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="310" x="600" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-6" edge="1" parent="1" source="JWVcpfvBtUJJNNRV4fJH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.006;entryY=0.382;entryDx=0;entryDy=0;entryPerimeter=0;" target="KK8gMwIVhVp7HBfC7dF9-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="Devuelve la lista completa con todos los fragmentos y sus posiciones exactas" vertex="1">
+          <mxGeometry height="50" width="290" x="600" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;chunk&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Busca las posiciones de lo # con &lt;b&gt;finditer&lt;/b&gt; sirve para algo totalmente diferente: dividir el documento por secciones lógicas (por sus títulos) antes de trocearlo por tamaño.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="250" x="270" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;candidate_fragments.extend(sub_fragments)&lt;/b&gt; es un metodo de las listas de Python que sirve para añadir varios elementos de golpe al final de una lista. Si tener que generar una lista rara cuando lo agregues.&lt;br&gt;&lt;br&gt;&lt;b&gt;_split_long_text &lt;/b&gt;te devuelve una lista de fragmentos, usas .extend() para unir esa nueva lista a tus fragmentos candidatos sin crear listas anidadas raras." vertex="1">
+          <mxGeometry height="160" width="390" x="560" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;Aqui no se busca cabeceras (#), si no que se troceaba el texto a lo bruto por puntos (.) y palabras cuando un bloque era demasiado largo.&amp;nbsp;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="490" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-13" edge="1" parent="1" source="JWVcpfvBtUJJNNRV4fJH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.041;entryY=1.039;entryDx=0;entryDy=0;entryPerimeter=0;" target="KK8gMwIVhVp7HBfC7dF9-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-15" edge="1" parent="1" source="KK8gMwIVhVp7HBfC7dF9-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.348;entryDx=0;entryDy=0;entryPerimeter=0;" target="KK8gMwIVhVp7HBfC7dF9-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;merged_chunks &lt;/b&gt;es la lista donde vas guardando los fragmentos definitivos y limpios después de revisar que no haya trozos demasiado pequeños. Cuando te encuentras con un trozo(ejm 15car), miras el umbral mínimo (&lt;b&gt;minimum_threshold)&lt;/b&gt;, como es pequeño dice no voy a dejar este cacho tan ridiculo solo; voy a pegarlo al fragmento anterior para que formen un bloque decente." vertex="1">
+          <mxGeometry height="160" width="390" x="150" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="KK8gMwIVhVp7HBfC7dF9-18" edge="1" parent="1" source="KK8gMwIVhVp7HBfC7dF9-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.458;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" target="KK8gMwIVhVp7HBfC7dF9-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
