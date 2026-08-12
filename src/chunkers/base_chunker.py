@@ -11,6 +11,11 @@ class BaseChunker(ABC):
     smaller chunks while preserving enough information to reconstruct
     their location in the original document.
     """
+
+    def __init__(self, minimum_threshold: int = 100, overlap_size: int = 200):
+        self.minimum_threshold = minimum_threshold
+        self.overlap_size = overlap_size
+
     @abstractmethod
     def chunk(
             self,

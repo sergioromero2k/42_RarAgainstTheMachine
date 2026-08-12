@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="w4y6IhvmtrjHlGB1j8Ks">
-    <mxGraphModel dx="2582" dy="2156" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2450" dy="1998" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -268,13 +268,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fyuTzEbOKJZI9zh-kHTf-82" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]&quot;&gt;ast.parse()&lt;/code&gt; puede fallar sí o sí en algún archivo del repo de vLLM, porque son miles de archivos que tú no controlas — puede haber alguno con sintaxis rara, incompleto, o algo que el parser no entienda.&amp;nbsp; Si falla ese archivo en concreto, no te quedas sin nada — caes a trocear ese archivo problemático con el método más simple (sliding window a lo bruto)." vertex="1">
-          <mxGeometry height="120" width="300" x="790" y="-80" as="geometry" />
+          <mxGeometry height="120" width="300" x="795" y="-80" as="geometry" />
         </mxCell>
         <mxCell id="fyuTzEbOKJZI9zh-kHTf-83" edge="1" parent="1" source="fyuTzEbOKJZI9zh-kHTf-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.211;exitY=-0.013;exitDx=0;exitDy=0;exitPerimeter=0;" target="fyuTzEbOKJZI9zh-kHTf-82">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fyuTzEbOKJZI9zh-kHTf-84" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Si tienes varias funciones muy cortas seguidas (como getters de 2-3 líneas), las juntas en un mismo chunk hasta acercarte al límite de tamaño, en vez de generar un chunk minúsculo por cada una." vertex="1">
-          <mxGeometry height="70" width="300" x="790" y="50" as="geometry" />
+          <mxGeometry height="70" width="300" x="795" y="50" as="geometry" />
         </mxCell>
         <mxCell id="fyuTzEbOKJZI9zh-kHTf-85" edge="1" parent="1" source="fyuTzEbOKJZI9zh-kHTf-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.213;exitY=0.003;exitDx=0;exitDy=0;exitPerimeter=0;" target="fyuTzEbOKJZI9zh-kHTf-84">
           <mxGeometry relative="1" as="geometry" />

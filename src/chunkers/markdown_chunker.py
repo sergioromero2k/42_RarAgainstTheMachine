@@ -8,9 +8,8 @@ class MarkdownChunker(BaseChunker):
     """"""
 
     def __init__(self, minimum_threshold: int = 100, overlap_size: int = 200):
-        self.minimum_threshold = minimum_threshold
+        super().__init__(minimum_threshold, overlap_size)
         self.heading_pattern = re.compile(r'^[ ]{0,3}#{1,6}\s+', re.MULTILINE)
-        self.overlap_size = overlap_size
 
     def _save_fragment(
             self,
