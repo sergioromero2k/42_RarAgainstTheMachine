@@ -1,4 +1,4 @@
-from chunkers.base_chunker import BaseChunker
+from src.chunkers.base_chunker import BaseChunker
 from typing import List
 from src.models import MinimalSource
 import re
