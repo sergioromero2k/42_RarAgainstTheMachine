@@ -26,6 +26,7 @@ class PythonChunker(BaseChunker):
             pos_start_line.append(pos)
             pos += len(line) + 1
 
+        fragments = []
         try:
             tree = ast.parse(content)
             for nodo in ast.walk(tree):
@@ -37,8 +38,51 @@ class PythonChunker(BaseChunker):
                         fin_char = len(content)
 
                     text_function = content[start_char:fin_char]
-                    if len(text_function) > max_chunk_size:
-                        pass
 
+                    if len(text_function) <= max_chunk_size:
+                        self._save_fragment(
+                            fragments, text_function, start_char)
+                    else:
+                        function_lines = text_function.split('\n')
+                        current_chunk = ""
+                        chunk_offset = start_char
+
+                        for line in function_lines:
+                            candidate = (
+                                current_chunk + "\n" +
+                                line if current_chunk else line
+                            )
+
+                            if len(candidate) <= max_chunk_size:
+                                current_chunk = candidate
+                            else:
+                                if current_chunk:
+                                    chunk_offset = self._save_fragment(
+                                        fragments, current_chunk,
+                                        chunk_offset)
+                                if len(line) > max_chunk_size:
+                                    for i in range(
+                                            0, len(line), max_chunk_size):
+                                        chunk_offset = self._save_fragment(
+                                            fragments, line[
+                                                i:i+max_chunk_size], chunk_offset)
+                                    current_chunk = ""
+                                else:
+                                    current_chunk = line
+
+                        if current_chunk:
+                            self._save_fragment(
+                                fragments, current_chunk, chunk_offset
+                            )
         except SyntaxError:
             return []
+
+        minimal_sources = []
+        for chunk_data in fragments:
+            source = MinimalSource(
+                file_path=file_path,
+                first_character_index=chunk_data['start'],
+                last_character_index=chunk_data['end']
+            )
+            minimal_sources.append(source)
+        return minimal_sources

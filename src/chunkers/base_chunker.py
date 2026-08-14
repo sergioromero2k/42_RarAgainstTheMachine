@@ -22,3 +22,20 @@ class BaseChunker(ABC):
             content: str,
             file_path: str, max_chunk_size: int) -> List[MinimalSource]:
         pass
+
+    def _save_fragment(
+            self,
+            fragments: list,
+            text: str,
+            start_offset: int
+    ) -> int:
+        """"""
+        if not text:
+            return start_offset
+        end_offset = start_offset + len(text)
+        fragments.append({
+            'text': text,
+            'start': start_offset,
+            'end': end_offset
+        })
+        return end_offset

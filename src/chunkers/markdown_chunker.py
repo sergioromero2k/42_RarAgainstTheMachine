@@ -11,23 +11,6 @@ class MarkdownChunker(BaseChunker):
         super().__init__(minimum_threshold, overlap_size)
         self.heading_pattern = re.compile(r'^[ ]{0,3}#{1,6}\s+', re.MULTILINE)
 
-    def _save_fragment(
-            self,
-            fragments: list,
-            text: str,
-            start_offset: int
-    ) -> int:
-        """"""
-        if not text:
-            return start_offset
-        end_offset = start_offset + len(text)
-        fragments.append({
-            'text': text,
-            'start': start_offset,
-            'end': end_offset
-        })
-        return end_offset
-
     def _split_long_text(
             self,
             text: str,
