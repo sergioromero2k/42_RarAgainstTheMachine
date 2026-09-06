@@ -1,0 +1,617 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="meT-X8BSzV5CILLARwod">
+    <mxGraphModel dx="3480" dy="1613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;MinimalSource&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- file_path: str&lt;br&gt;- first_character_index: int&lt;br&gt;- last_character_index: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="160" x="130" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-2" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;UnansweredQuestion&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- question_id: str = Field(default_factory=lambda&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;: str(uuid.uuid4()))&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- question: str&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="270" x="300" y="-60" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-3" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;BaseModel&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="220" y="-210" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-4" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;AnsweredQuestion&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- sources: List[MinimalSource]&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- answer: str&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="480" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-5" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-4" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.45;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.493;exitY=-0.005;exitDx=0;exitDy=0;exitPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-2" value="es">
+          <mxGeometry relative="1" width="160" x="0.0103" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="320" y="250" as="sourcePoint" />
+            <mxPoint x="480" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-6" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-1" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.537;exitY=-0.022;exitDx=0;exitDy=0;exitPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-3" value="es">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="230" y="81" as="sourcePoint" />
+            <mxPoint x="230" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-7" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-2" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.647;entryY=1.031;entryDx=0;entryDy=0;exitX=0.419;exitY=-0.001;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-3" value="es">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="290" y="158" as="sourcePoint" />
+            <mxPoint x="464" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-8" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;RagDataset&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- rag_questions: List[AnsweredQuestion&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;| UnansweredQuestion]&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="250" x="-130" y="-210" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-9" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;MinimalSearchResults&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- question_id: str&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- question: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- retrieved_sources: List[MinimalSource]&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="-110" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-10" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;MinimalAnswer&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- answer: str&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="70" width="110" x="-45" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-11" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-10" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="LQwCk8dbOmhS_KGoKl8P-9" value="es">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-90" y="121" as="sourcePoint" />
+            <mxPoint x="-90" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-12" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-9" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=-0.008;entryY=0.682;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-3" value="es">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="10" y="-102" as="sourcePoint" />
+            <mxPoint x="144" y="-180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-13" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-8" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.01;entryY=0.437;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-3" value="es">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="110" y="-81" as="sourcePoint" />
+            <mxPoint x="439" y="-170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-14" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;StudentSearchResults&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&amp;nbsp;search_results: List[&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;MinimalSearchResults]&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- k: int&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="210" x="490" y="-330" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-15" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;StudentSearchResultsAndAnswer&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;search_results: List[MinimalAnswer]&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="70" width="210" x="490" y="-186.87" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-16" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-15" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.536;entryY=1.03;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.54;exitY=0.003;exitDx=0;exitDy=0;exitPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-14" value="es">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="683" y="116" as="sourcePoint" />
+            <mxPoint x="680" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-17" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-14" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="LQwCk8dbOmhS_KGoKl8P-3" value="es">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="449" y="-23" as="sourcePoint" />
+            <mxPoint x="440" y="-110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-18" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;" value="La pieza más pequeña, se usa en TODOS los pasos a partir de search" vertex="1">
+          <mxGeometry height="60" width="160" x="130" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-19" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-18" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-50" y="300" as="sourcePoint" />
+            <mxPoint y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-20" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;La usas para LEER el dataset de entrada.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;* Se usa cuando se ejecuta el comando search y lee el archivo data/datasets/... que te dan ellos con preguntas, sin repsuesta.) Ese JSON se vuelve en un objeto&amp;nbsp;UnansweredQuestion.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="250" x="600" y="-75" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-21" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-20" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="590" y="165" as="sourcePoint" />
+            <mxPoint x="590" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-22" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;El contenedor que agrupa muchas preguntas de golpe. Ocurre cuando cargas un archivo JSON entero(que tiene 100 preguntas dentro, por ejm). Acepta 2 con solucion y sin.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="200" x="-490" y="-290" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-23" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-22" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1;exitY=0.52;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="LQwCk8dbOmhS_KGoKl8P-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-190" y="-240" as="sourcePoint" />
+            <mxPoint x="-140" y="-290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-24" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;La usas cuando LEES el dataset con la solución correcta.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Cuando el comando &lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]&quot;&gt;evaluate&lt;/code&gt; necesita comparar tus resultados contra la verdad. Fíjate que este dataset viene en &lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]&quot;&gt;data/datasets/AnsweredQuestions/&lt;/code&gt; — ahí &lt;strong&gt;sí&lt;/strong&gt; vienen las fuentes correctas y la respuesta correcta ya escritas por los profesores. Tú &lt;strong&gt;no generas&lt;/strong&gt; un &lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]&quot;&gt;AnsweredQuestion&lt;/code&gt;, tú &lt;strong&gt;lo lees&lt;/strong&gt; para comparar.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="152.5" width="300" x="710" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-25" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-24" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.001;exitY=0.415;exitDx=0;exitDy=0;exitPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="300" as="sourcePoint" />
+            <mxPoint x="440" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-26" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;text-align: center;&quot;&gt;La usas cuando TU comando search genera resultados.&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Cuando ejecutas search_dataset, y tú mismo (tu código) genera el resultado de &quot;para esta pregunta, encontré estos fragmentos&quot;.&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Fíjate: &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;todavía no hay respuesta generada por el LLM&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;, solo los fragmentos encontrados. Por eso esta clase no tiene campo &lt;/span&gt;&lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;answer&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="155" width="280" x="-450" y="-95" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-27" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-26" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1.016;exitY=0.491;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="LQwCk8dbOmhS_KGoKl8P-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-160" y="-10" as="sourcePoint" />
+            <mxPoint x="-65" y="-5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-28" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;text-align: center;&quot;&gt;La usas cuando TU comando asnwer genera la respuesta final.&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Un paso más adelante en el pipeline: cuando coges los resultados de search y les pasas el LLM por encima para generar texto. Es literalmente MinimalSearchResults + el campo answer añadido, porque ya avanzaste un paso más en el pipeline.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="280" x="-400" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-29" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-28" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1.001;exitY=0.527;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.003;entryY=0.588;entryDx=0;entryDy=0;entryPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-90" y="91" as="sourcePoint" />
+            <mxPoint x="-34" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-30" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;Es el formato exacto que tiene que tener el archivo .json que generas cuando ejecutas search_dataset. Cuando tu programa procesa 100 preguntas y buscas fuentes para cada una, tien que guardar el resultado en disco.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;data/output/search_results/dataset_docs_public.json) de una forma concreta, para que&amp;nbsp;que la moulinette del evaluador pueda abrir ese archivo después y entender qué encontraste.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="167.5" width="300" x="750" y="-390" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-31" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;search_dataset → genera un JSON con forma StudentSearchResults (solo fuentes, sin respuesta)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;answer_dataset → genera un JSON con forma StudentSearchResultsAndAnswer (fuentes + respuesta)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="113.75" width="260" x="750" y="-208.75" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-32" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-31" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=1.004;entryY=0.567;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="710" y="-110" as="sourcePoint" />
+            <mxPoint x="670" y="-110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-33" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-30" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=1.009;entryY=0.574;entryDx=0;entryDy=0;exitX=0.001;exitY=0.552;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="799" y="-170" as="sourcePoint" />
+            <mxPoint x="740" y="-168" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-34" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-35" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.182;entryY=0.992;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=130;exitDy=0;exitPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="430" y="240" as="sourcePoint" />
+            <mxPoint x="425" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-35" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;strong&gt;UUID&lt;/strong&gt; significa &lt;strong&gt;Universally Unique Identifier&lt;/strong&gt; (Identificador Único Universal). Es básicamente un código muy largo y prácticamente irrepetible, con esta pinta:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/code&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;question_id&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;?&amp;nbsp;&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;tu sistema va a procesar datasets con 100+ preguntas de golpe (&lt;/span&gt;&lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;search_dataset&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;, &lt;/span&gt;&lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;answer_dataset&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;). Cada pregunta necesita un identificador único para que, más adelante, en &lt;/span&gt;&lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;evaluate&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;, puedas decir &lt;/span&gt;&lt;em style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;la respuesta que generé para la pregunta X coincide (o no) con la solución correcta de la pregunta X&quot;.&lt;/em&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="360" x="320" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-37" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;text-align: center;&quot;&gt;BaseChunker&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Una &lt;b&gt;clase abstracta&lt;/b&gt; es la forma de decirle a Python: esta clase existe solo para que otras hereden de ella y la completen, nadie deberia poder crear una instancia de ella.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Obligas que cualquier chunker nuevo que crees en el futuro(Ejm: JsonChunker) tenga que implementar obligatoriamente el método &lt;b&gt;chunk&lt;/b&gt;.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;* &lt;b&gt;minimum_threshold &lt;/b&gt;por debajo de este tamaño, un chunk se considera &quot;demasiado pequeño&quot; y se intenta fusionar con el siguiente.&lt;/div&gt;&lt;div&gt;* &lt;b&gt;heading_pattern &lt;/b&gt;el patron compilado que detecta encabezados(#, ##...)&lt;/div&gt;&lt;div&gt;* &lt;b&gt;overlap_size &lt;/b&gt;cuántos caracteres se solapan entre chunks consecutivos.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="400" x="-1980" y="-1010" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-39" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;BaseChunker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&amp;nbsp;+ minimum_threshold&amp;nbsp;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-&amp;gt; int&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ overlap_size&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-&amp;gt; int&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ chunk(contenido: str, file_path: str,&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;max_chunk_size:int) -&amp;gt; List[MinimalSoruce]&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="437" x="-1330" y="-940" as="geometry" />
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-40" edge="1" parent="1" source="i43wYCJkIFNmSQkzB6LR-1" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.356;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.581;exitY=-0.005;exitDx=0;exitDy=0;exitPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-39" value="es">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-1250" y="-600" as="sourcePoint" />
+            <mxPoint x="-1260" y="-580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-41" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-43" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.684;entryY=0.997;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="LQwCk8dbOmhS_KGoKl8P-39" value="es">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-1060" y="-610" as="sourcePoint" />
+            <mxPoint x="-1102" y="-640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-43" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PythonChunker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- rag_questions: List[AnsweredQuestion&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;| UnansweredQuestion]&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="250" x="-1070" y="-780" as="geometry" />
+        </mxCell>
+        <mxCell id="i43wYCJkIFNmSQkzB6LR-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MarkdownChunker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ heading_pattern&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;- rag_questions: List[AnsweredQuestion&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;| UnansweredQuestion]&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;_save_fragment(self, fragments: list, text: str, start_offset: int)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; font-size: 12px;&quot;&gt;_split_long_text( self, text: str, base_start: int, max_chunk_size: int) -&amp;gt; List[dict]&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="437" x="-1530" y="-780" as="geometry" />
+        </mxCell>
+        <mxCell id="i43wYCJkIFNmSQkzB6LR-3" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;MarkdownChunker&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;** &lt;b&gt;_save_fragment() &lt;/b&gt;su trabajo recibe un trozo de texto y la posición donde empieza, calcula dónde termina (&lt;b&gt;start + longitud&lt;/b&gt;), lo guarda en la lista de fragmentos como diccionario, devuelve la posición final.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;**&amp;nbsp;&lt;b&gt;_split_long_text() &lt;/b&gt;el corazón de la partición en 3 niveles, se llama solo cuando una sección es más grande que &lt;b&gt;max_chunk_size.&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: bold; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;Nivel frases: &lt;/b&gt;divide el texto por puntos, reconstruyendo cada frase &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;compelta(con su punto incluido) y acumulándolas en &lt;b&gt;temp_chunk &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;hasta acercarse al límite.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;Nivel palabras &lt;/b&gt;si una frase individual ya es más grande que &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;max_chunk_size, &lt;/b&gt;la divide por espacios y acumula palabras en &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;emergency_chunk.&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: bold; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;Nivel caracteres &lt;/b&gt;si una palabra indivodual ya es más grande que &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;max_chunk_size &lt;/b&gt;(URL larga, etc), le trocea directamente por &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;posición &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;con &lt;b&gt;word[i:i+max_chunk_size], &lt;/b&gt;garantizando que ningún &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;chunk final &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;supera el límite bajo ninguna circunstancia.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;**&amp;nbsp;&lt;b&gt;chunk() &lt;/b&gt;usa &lt;b&gt;finditer&amp;nbsp;&lt;/b&gt;&amp;nbsp;sobre &lt;b&gt;heading_pattern&amp;nbsp;&lt;/b&gt;&amp;nbsp;para encontrar todas las posiciones de encabezados, y construye desde cada encabezado hasta el siguiente (o hasta el final del archivo).&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="400" x="-1980" y="-780" as="geometry" />
+        </mxCell>
+        <mxCell id="i43wYCJkIFNmSQkzB6LR-4" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;text-align: center;&quot;&gt;PythonChunker&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;* &lt;b&gt;minimum_threshold &lt;/b&gt;por debajo de este tamaño, un chunk se considera &quot;demasiado pequeño&quot; y&amp;nbsp;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="370" width="420" x="-750" y="-1020" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-1" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="-530" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Repositorio vLLM" vertex="1">
+          <mxGeometry height="20" width="120" x="-1062.5" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Leer archivos" vertex="1">
+          <mxGeometry height="20" width="90" x="-1050" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Chunking" vertex="1">
+          <mxGeometry height="20" width="70" x="-1030" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-5" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="25g8H-DaqNSgns0Cxm-p-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Lista de chunks" vertex="1">
+          <mxGeometry height="20" width="90" x="-1090" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Construir índice BM25" vertex="1">
+          <mxGeometry height="20" width="130" x="-990" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-8" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Guardar índice en disco&lt;div&gt;Más tarde...&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="-1070" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Usuario hace una pregunta" vertex="1">
+          <mxGeometry height="30" width="105" x="-1047.5" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="BM25 devuelve los chunks más relevantes" vertex="1">
+          <mxGeometry height="30" width="140" x="-1020" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-12" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.605;entryY=-0.038;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-13" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.553;entryY=-0.037;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-14" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.413;entryY=0.049;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-15" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.471;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-16" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="25g8H-DaqNSgns0Cxm-p-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Repositorio vLLM" vertex="1">
+          <mxGeometry height="20" width="120" x="-880" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Recorrer archivos" vertex="1">
+          <mxGeometry height="32.5" width="90" x="-865" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-19" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="¿Es .py?" vertex="1">
+          <mxGeometry height="20" width="70" x="-845" y="332.5" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-21" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="No" vertex="1">
+          <mxGeometry height="20" width="30" x="-825" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Lista de chunks" vertex="1">
+          <mxGeometry height="20" width="100" x="-765" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-24" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="bm25s.tokenize()" vertex="1">
+          <mxGeometry height="30" width="105" x="-767.5" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="BM25.index()" vertex="1">
+          <mxGeometry height="20" width="82.5" x="-756.25" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-27" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Guardar índice + metadatos" vertex="1">
+          <mxGeometry height="30" width="105" x="-765" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-29" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.605;entryY=-0.038;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-30" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-31" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="25g8H-DaqNSgns0Cxm-p-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-32" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Si" vertex="1">
+          <mxGeometry height="20" width="30" x="-747.5" y="332.5" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="PythonChunker (AST)" vertex="1">
+          <mxGeometry height="27.5" width="100" x="-695" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-35" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-36" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="¿Es .md?" vertex="1">
+          <mxGeometry height="20" width="70" x="-790" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Si -&amp;gt; MarkdownChunker" vertex="1">
+          <mxGeometry height="20" width="145" x="-725" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-39" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="25g8H-DaqNSgns0Cxm-p-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="No -&amp;gt; Chunker básico" vertex="1">
+          <mxGeometry height="20" width="130" x="-725" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Listo para realizar búsquedas" vertex="1">
+          <mxGeometry height="30" width="110" x="-767.5" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-42" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.479;entryY=0.088;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-43" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.539;entryY=0.141;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-44" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="25g8H-DaqNSgns0Cxm-p-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pregunta del usuario" vertex="1">
+          <mxGeometry height="30" width="120" x="-570" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-46" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Okapi BM25" vertex="1">
+          <mxGeometry height="32.5" width="90" x="-555" y="257.5" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-48" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-49" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Documentos más relevantes" vertex="1">
+          <mxGeometry height="32.5" width="95" x="-557.5" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Modelo LLM genera respuesta" vertex="1">
+          <mxGeometry height="32.5" width="105" x="-562.5" y="367.5" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-51" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Documentos" vertex="1">
+          <mxGeometry height="18.75" width="90" x="-1213.75" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-53" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-54" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;Tokenize&lt;/b&gt; (convertir texto en tokens)" vertex="1">
+          <mxGeometry height="32.5" width="115" x="-1226.25" y="248.75" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-55" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-56" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;Index&lt;/b&gt; (crear índice BM25)" vertex="1">
+          <mxGeometry height="32.5" width="95" x="-1211.25" y="298.75" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-57" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;Retrieve&lt;/b&gt; (calcula scores y devuelve los documentos más relevantes.)" vertex="1">
+          <mxGeometry height="63.75" width="106.25" x="-1216.25" y="356.25" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-59" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;Resultados &lt;/b&gt;ordenados por score" vertex="1">
+          <mxGeometry height="52.5" width="102.5" x="-1213.75" y="453.75" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-60" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-61" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="100.000 documentos PDF" vertex="1">
+          <mxGeometry height="30" width="137.5" x="-1400" y="218.75" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-62" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-63" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="bm25s.tokenize()" vertex="1">
+          <mxGeometry height="20" width="115" x="-1388.75" y="268.75" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-64" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-65" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="bm25.index()&amp;nbsp;" vertex="1">
+          <mxGeometry height="22.5" width="95" x="-1373.75" y="306.25" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-66" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Usuario&lt;br&gt;&lt;b&gt;¿Cómo configurar OAuth?&quot;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.5" width="140" x="-1396.25" y="362.5" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-68" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="25g8H-DaqNSgns0Cxm-p-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-69" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="bm25.retrieve()&amp;nbsp;" vertex="1">
+          <mxGeometry height="22.5" width="102.5" x="-1377.5" y="436.25" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-70" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Top 5 documentos" vertex="1">
+          <mxGeometry height="22.5" width="110.5" x="-1381.5" y="481.25" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-72" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="LLM responde" vertex="1">
+          <mxGeometry height="22.5" width="96.75" x="-1374.63" y="527.5" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-73" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-75" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="25g8H-DaqNSgns0Cxm-p-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-74" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-75" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="25g8H-DaqNSgns0Cxm-p-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-75" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="MarkdownChunker" vertex="1">
+          <mxGeometry height="30" width="150" x="-320" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-76" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="__init__" vertex="1">
+          <mxGeometry height="30" width="80" x="-35" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-77" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-78" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-79" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="25g8H-DaqNSgns0Cxm-p-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-80" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;_split_long_text&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Divide un texto que supera el &lt;b&gt;max_size_chunk_size&lt;/b&gt;, buscando primero puntos(.) y aplicando un corte de emergencia por palabras/espacios si una frase es demasiado largo.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="250" x="-90" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-81" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;parts &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;es la lista que devuelve &lt;b&gt;re.split(r&#39;(\.)&#39;..&lt;/b&gt; &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;part &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;es solo un elemento de esa lista mientras lo vas recorriendo con el &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;for part..&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;temp_chunk &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;es tu mochila temporal&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;. &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Vas metiendo frase1, luego frase2, y vas midiendo cuánto ocupan juntos....&lt;/span&gt;&lt;/div&gt;&lt;b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;emergency_chunk &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;caso extremo de temp_chunk (modo emergencia). La estrategia normal es por puntos, pero si encuentras una frase infinitamente grande. que no hay punto, se rompe la frase y vas usando e_c, como mochila cortando con los espacios hsta rozar el&amp;nbsp; limite permitido.&lt;/span&gt;&lt;/div&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="450" x="-570" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-82" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-80" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.396;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="25g8H-DaqNSgns0Cxm-p-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-83" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;Lista donde se van a guardar todos lso fragmentos definitivos ya troceados.&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="250" x="400" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-84" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.544;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.958;exitY=-0.006;exitDx=0;exitDy=0;exitPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-85" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; temp_current_sentence:&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;sentences_info.append(temp_current_sentence)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Red de seguridad: si el texto no terminaba con punto, guarda lo último que haya quedado suelto.&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="390" x="240" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-86" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="words = re.split(&lt;span class=&quot;hljs-string&quot;&gt;r&#39;(\s+)&#39;&lt;/span&gt;, sentence)&amp;nbsp;&lt;div&gt;emergency_chunk = &lt;span class=&quot;hljs-string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span class=&quot;hljs-comment&quot;&gt;&lt;b&gt;Pasa a modo emergencia: pica la frase gigante palabra por palabra usando los espacios.&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="310" x="240" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-87" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.006;entryY=0.382;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-88" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="Devuelve la lista completa con todos los fragmentos y sus posiciones exactas" vertex="1">
+          <mxGeometry height="50" width="290" x="240" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-89" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;chunk&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Busca las posiciones de lo # con &lt;b&gt;finditer&lt;/b&gt; sirve para algo totalmente diferente: dividir el documento por secciones lógicas (por sus títulos) antes de trocearlo por tamaño.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="250" x="-90" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-90" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;candidate_fragments.extend(sub_fragments)&lt;/b&gt; es un metodo de las listas de Python que sirve para añadir varios elementos de golpe al final de una lista. Si tener que generar una lista rara cuando lo agregues.&lt;br&gt;&lt;br&gt;&lt;b&gt;_split_long_text &lt;/b&gt;te devuelve una lista de fragmentos, usas .extend() para unir esa nueva lista a tus fragmentos candidatos sin crear listas anidadas raras." vertex="1">
+          <mxGeometry height="160" width="390" x="200" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-91" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;Aqui no se busca cabeceras (#), si no que se troceaba el texto a lo bruto por puntos (.) y palabras cuando un bloque era demasiado largo.&amp;nbsp;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="130" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-92" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.041;entryY=1.039;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-93" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.348;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-94" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;merged_chunks &lt;/b&gt;es la lista donde vas guardando los fragmentos definitivos y limpios después de revisar que no haya trozos demasiado pequeños. Cuando te encuentras con un trozo(ejm 15car), miras el umbral mínimo (&lt;b&gt;minimum_threshold)&lt;/b&gt;, como es pequeño dice no voy a dejar este cacho tan ridiculo solo; voy a pegarlo al fragmento anterior para que formen un bloque decente." vertex="1">
+          <mxGeometry height="160" width="390" x="-210" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-95" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.458;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-96" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;08 - BM25 en tiempo de query&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;BM25&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;es un algoritmo de &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ranking léxico. &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Dado un query &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;q &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;y un conjunto de &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;documentos/chunks,&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt; calcula una puntuación para estimar qué documentos son más relevantes.&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b style=&quot;&quot;&gt;BM25&lt;/b&gt; no busca simplemente documentos que contengan las palabras del query, las ordena según lo informativas que sean esas palabras y dónde aparecen con qué frecuencia.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="179" width="356.25" x="-1665.62" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-97" parent="1" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAAe4AAABeCAYAAADlqveXAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzt3X1wFPeZ6Pvv3qhKXSW7eriquDG4NL5KMkM4SwNO1IGyJUhsAeV4kOMgnCwSvrFlJYfIul6QsL2yjoujjF9AOC4xZr1icnJAcHdhzMZ42F1gfGI88gbvqA5YzR45M1mr3Korm/YtXaarUNVPVZPS/WMk0MuM0Csg/PtUzR+Inu4e9aif/r09z1+kUqlBJEmSJEmaF/63m30CkiRJkiRNngzckiRJkjSPyMAtSZIkSfOIDNySJEmSNI/IwC1JkiRJ84gM3JIkSZI0j8jALUmSJEnziAzckiRJkjSPyMAtSZIkSfOIDNySJEmSNI/IwC1JkiRJ84gM3JIkSZI0j8jALUmSJEnziAzckiRJkjSPyMAtSZIkSfOIDNySJEmSNI/IwC1JkiRJ84gM3JIkSZI0j8jALUmSJEnziAzckiRJAP1x2p6rxn/WvtlnktYbpvEXjYR7xPW3TTnEWmup3R/Dmfszu7FE+ro03yrX5RYgA7ckSbc90RWisbKM9Q+XUf1KGGtsLBQW4ZdqCedXUfOANrsH74vSuGYBCxZM8Pr6EsqeDWL2jXjfYh81m6DtuQDRvqx7BwTxI/U0ntOpesJAHf5xf5y2Z8tY/4M1rPjLVVQftWb3c80Bp9fGSY35oeKl/Oel9LTUE7xw2z2WTIsM3JIk3d76TQLP1xOmmBI1TujNIOHu0ZHbOrWX5kQJdT83UHPGvL8vir98DZtb40yi7TtefglNH1zmj22VaIB7yyH++P9e5vLl9OuLf/+A1mo3nQfr2doQGvVQoa2t4+mCMI2vRLDHBrQhIhHCfzBJeX0Fet6I/8jzsnHbDnxuG8sGrcA1nbOfe45NvD1E87NlrHmwmrau8b9lpbCcHVsUgg0BYjJ2y8AtSdLtzekKEz4PnuLleDwlVP2XHZR7lGsb9MU4vD+K9sgmdDXD+y+GCZ1NMDCjsxDYXZ3YqOirdbQRDwfKYp3yXYfYt8WNddTP3vdGdAnnqBT/xIer/QDhRIbHhpRNZP+bmIXllI78TEPUAjfKFQGLdIyCDB9utvSbBJ9rvk7PwHjiQjPr719P9a9DtLdHsa5k39a9toJSESZ46tbvOZhrMnBLknQbE1jtURJ/drN8pUH5rlb2VJeMCpz2ucOE+wzKN3gZH/oEVszEzvFgLFuY4f8nexo2nRcsULzoSzN0xedoGI+UoGERPWWOal0rnnUU58cIHmwf140ses7Q9j6U/qQE99ieAoA+k1jCQdWL0fOne/KTkBIkHYeBLL0C2Sgr6zj97x/zwbF9VBVdZ4gifzmlq+HMwdBXvtUtA7ckSbevlEO8y0Lke9EXZWhxpmxip6IkPcUYd2V4v7DpvBBHLFqOUTiDFqtj0tHlwCKd5Ysyh39F1dBywO6JkxwZAPPcGCsXYp09My5g2ecimDk6JcsyBz2nx8T8UmF5sYE27aeOSZpi0J46FW+RjqsrTCRT78NXiAzckiTdfvpNAhvvZsHXl1B93IbeEFv/cgELvrmZtpHj2/0WZlcSzePFNSKwiUSQsnsXsODuFdSecqC7jc1LFnD3w82Y/VM/HafbpPNzUHUDT7aW70Ay3aJOAX8e+R/pgKX1JYj3jjj3lEPiQgKxWMdzR6YdCi5diGHhwVi5EAWBdaqZ2p+Wsf6x2oxjyTMxs6GEyVGXFuNRbOKJr/YMcxm4JUm6/eTp1Lz7BZc7W/FpIyaE/ccxKgtHjm/H6fwcXItVcke8XfFUceKzy3xxpgE9T8Fo/IAvLl/mi3+uGz0BbFLSATSRUlheNHp8e9Q2XQlsIFdVUb42+n9VtwcNC+v/GxEeBy4R77qEcpeGK5fxUjaxc53p3oJFYP5mJ/WnFEof0cF8l8OnEtObbHcTKflu3PkCq8eed+c+m2TgliTptuX0miT6FNwez/jZ4oDos7GvKKiqknF82+6KYQ240e9zT398O+Vgno8jcKNnGydP2Zgd6Vnrbt07vls7z4WCwOkbEa6EjdU3gOJyZd5nX4IO00FdqiP+6VcEHR/7Xq1E64lhOgvRl2rX3udYxN4JEbvVG7KKC1cuDPRNfTz9dpLx2U+SpqzfxjTHjM3NGgVtqY43f64H6aTbiyCZiHMJjeKlmQPmQGoAUHCpGZZKpRxi7SZOvjHD8e04sYs2LC7Jvh/bpP28DXgpeWD8JDlFUVFzBHZfEsFQwE0NMJACRVXJzXAnd7pjxD4HhzbaPC+y74VStBzQXjjNFy8MbSQsIvsDhDpiRDtc1PyjD2OiwXAnhv9H62m+kOX/jwfG/2xpDSfebaJkUpPjrtOO/lou6h2QTCYRwBzOk7+lycAtzQrRFeSZjc2Yw4FbcaN/W0OZ9DdMIBybRCJzF5j7iWOcbi7N0s0oSZkMYHX14OS58RZk6ksmHfBygExhYCjgKh4DPdPEtUkSPTHMHlAfMLLO7LY7wpzpAXXDL6kommQ4yslNn3/Gh2XBpY4YVkpF/4YL+8hmlhwtpeFv91FXPGIim+KmdPseis0Aj/8scv1jqgYNv79Mw9ifOzH8O8IY/iZKZzl/TUZ/vv4mtzN5G5RmhbKsgprHQ1QfGVpj+TUNn/8Ydaun/kwsbIvEJzHOvHOYw0eiWCmwTrUR3V5KecEsn7h0+xKXSPzJAq0YT7bemjwNV44g6Yx/XBS9JmYveB4xcCuAsIn3gNujTanb3O6KERfgvk/PPLO73yR06Ax2fil7XijHm2EbIRyclIKaN6JLP0fBlZeL6E93G496SE7ZxDo6EQXrqNvXio8wtRu3sveVEL77avBiYwsVbb71Yv15AOcKKIW3aDKZG0SOcUuzQ3FT3riHKn3o3/0x/M83E53GmJmiudHXllP3xgk++rdj1G1wgx3h8KlpZq66RYnuMP5J5aIWmK211LbGxqeDlLJzejAtgVrgxZ1lQplyR7oL2rkixn237E9iWP0a3pVuFATxo378J68l/3ASUUKnzImvScrGPJfAQWP5sgzj5MIi/F+fwR9zU9W8hwo9SyDtTyJwoS0eEbByVdQ7QAx1G48yPL7tGZrFfoeGpirkKgoKDtE3GwnMx/ShIokYAG2RlnHOwleFDNwZ2Gebqa5rIz6NZR83g9PeTPVzt8D5aqW8+GodxvBN0gyw85Uw9gyirVJYSsNvT3Nsm471ThhzHt5rMrKj+OuCiEdr8BVcr9WjoG/5Jfp5P41Hb6+Hl7kk7DhxW8ne0gVQ3XgXgd1tj1/OlAKR58ajKTgXDrP3ZC7lm4x08O2L0vyzMqp/upXGkxM8nTpxYhcsUHWKlo7ofXIsYsebqX14DVv/SWPH3x9jz6PZJ8A5dg+2UoA+sss/ZyFez0LE5xb2mJMXPZ10fpn+7G4FyFHIzclF+d9VsGNEuj34rpfw5IYSiAFgQOD0T7CwzLGwHNeUez1uNzJwj+F0BHhmdw+l28rxjnlKFxeaWX/PdYoFLFlDdUs0a17hyRNYZ4PU/6yMNd9ZwYrlS7j7niWs+WkjbWOelNXip6nSIux8eWZBcjaoq3ew529Kr44Wxg/W03h8hsFG0ShtbKVpmUn43MRNePt4NUsyXJclPwthjbgmM7+WAnP3+onff/W1isb2Edcs5RDd7yf2rRpqHhp/8xQXgmz9QRn+cyPek+elotbHpf2NBE0ZuifD6TaxBtTMLd1heV6M+xaSvGhyacyv1b22kkrdIviLNax/zqR4VxO+4aEaRcO9SAUsYhfi4yty9YSpXr6ABd8sI9AFOBFqv3P3te/EvSvY/HoMNuzh9OlDo8edxxFYFzpJ5ntHT9DMUfEUeVB6TOJjUo0OCAfu0vGtHZrolueh/Ocbcb1XT9nPDqBuqcS4FWZ29UZofGwV9969gup3bEiZND+8hBVryqg9OP6+4XSbJFJu9JlMFrwdpFKpQfkaevWdH3z1R/cPPnnk0wm26xv8fcN3B++8857Bvzo4crsrg73nfze460ffHLzzznsGH9t/fvDKDM7jtzX3D95zz/2D2/7uD4OfOumfX+n+l8FXf/TNwTvveXBw1/u9Y97zh8FXH/7u4JMHP53+cWfrdeV/Df628puDd955Z/p172ODb52/MgvX59PB/9XdN4lt+wZ/v+O7g3feeefggy//YbBvLq+lc37w1R/cOXjnnd8d3PX+6HO70nt+8O+fe3Dw6wsfHHy149rnv3L+jcEfLn9wcNe5TJ/lyuAfXr5/8Otfv39w17kxvzPRO/i7qu8O3v/svwz2ipt8jW/515XBPzTdP/j1JX81+PfdE2/76dEnB//yPz05+PfW1I/T9/6uwW27/zC3f3NXPh1860d/OXh/w+/HfZevmG8N/nDJdwf/+r3J/F1kf105/8bgD//TDwffmO7fad8fBnf9ny8M/kvv3F7T8y8/OPjNh98YPO/c7O/XzX3JFvdVAutkM4e/NChf655gs0skutI5h41RaQYVNN1Hw1ut1OgOkdebCXVPo2XUE6Z+43pq33Pz4u/epeUp4+r4nFJQSl1gH1X5MZrrmomMbHyqOr6yAmJHDt/87mTFS+WuPVR6hv7dF6Hx+Vmo6qO68U6mUIK4hPmJBeiUFHuzLxmZjWvZF8fsBgoMDM/oIymaTvnPq/B50uOLaQ6x4yGswnI2Lc1wZsLC7LDSSTPGdqHnaBgbdJxTWQpOSIhEiNofrKKsKUzsvI26rDRzKtMR3A+UU+oyiXw41eIVAuuijTaTNd6TOUp3hDOfeyj/sTHuu6wUllKxCmInY9Pr5UvZRA82428J0dnTSXi/n+Yj09hXnk5FbQXGXOZDd0zCHzqUPO7DM+UkOLcXGbiH9ScIHY2hbSjHmKjXqi9B7BMBBTr64gx/rvnL8a31gh0lcp1u3XFEnLaGeoJd6YkqVSsz3NjzDdZ93w2JEG1nR95oFNzFPjw9IYLv3QLVcwp8NPhr0IcmkIhzfup3z8YQwiR8aRJLCCi4Tn7pWbiWdlc7Zh8o39DJ+EyR60Jb7Gbh8I3G6SRy1kZbbWSeMOX0YCYcNL04Y2pMdWkxnlSM8IeWHOseR2C1h3j3gkXSSWA6Xiq3bUyP8U5EK6amWsc8cnhKD5eiJ0Koq4DSLHnCZ0XKof1gCOehGiqXZvggihtfbQXauWk+zOVolDxRR1PwAz67/Bmn32qibosx9WWXOQpu3TunE8as94Kcyd1EzSNz+6A0H8jAPUR8GiWScGE8MEELjXRSA7MXtKUG3owb5qJqGgoOVvdU0vINz1q18T7ZxIsZxj4ByMlFW6QBDokue9TYmrJ4OUZBkuh0n75nmfZQHfsaS67+Ps39O2k+NfepmZzuGKYNql6UPS80s3Et02OPFuBZqbNw+G7SZxIZnm2cEohcDW0ol7ToTWDaCt6loyfX2O8Mjc0v2UxbT/rfK76+gFUN0fHXuJD0+uRb4BrfWhS8G56m5scGLtvGs203O4onMxaq4P5xAw3fjhE4GBs/Xp2RwDoXx/PU03PayrQ/DBDoLqFhW0nWoKjoVTRVuwi3hG7+BNU5InrCBI4Iync+nbH06lfNHAZuQfwdP5t/sIoV31nBiu+V0fjO+FaC0xWmuaaMNfevYc0P1rO5YfSXT/RECTy7mfX3r2LFkntZ9VM/4eFuS2ERfmkza76zgjWVzYSP+9l8/wpWrFlP9etjCs/3mYRfr2XrY+tZc/8qVq2rJthx7U/U/pOJlePB457oWyG4dNHEQsFbpGf9Qxq4kl6eMZASk068L7rD+F8JYysGm35SPPGT6/DnEmN+m0NVhES3iXVL/AGr6NUt7Hl8eOghTrChkdB1lz/NhMA6b2IB3pXLJ2g5zMK1FBZmRwLQWL7SffUBxe4IETJFOkuCVkLN35Rf7dpzekwsoaLlj/6eaY+28sfLX/BRcymq4qXm3c+4fPkyH/lLRj9I5mp4C1wke6w5ylI3zy0upS54ghNtLdQ9mqlMZxaKG99/2U1pb5AD7ZMJ3Qrex+uozNQrNlt6wgT+QVD12g5KJmzUK3i37KHhvg7ePGLefj0xIk6oJYy2bQ81k01Oc5ubs8Btv+en+pVOSl47zcf/9gGtj0No/8jxV0H8YDXrH/PTs3o3pz84zb6faJgH93L4fHojpyNI9Y+qCatPc+h/fMTHH/8bTYVnqP+Zn6gN9nsBQjlPs2e7jn3Sz9aXLdY1t7Lj2w7h1gOc6UkfyTnXzOaHnyGiVbHv2Gk++NezHNwiCB0Z7rp1sE0TJ0/Lut4TSOcc7ogjctxD1XYybxP/xAYU1HwXmfM1jSWw3j9MxAZlZSnrPBPcblIO8U/SXeGqNnb/uWiFBdBnTViQHrLPvs7+upfNB6fRPTu8vnvp0L97QjQ2zGHLQNh0dsSB6+SXno1r2ZdId8mrOkVD49siESawP4qiDwXyHBV34XDrWpDsvUQyx4WW6XuWckh0mDj5+gRd/ArKHQokbQa+4tmjZl2el8rXWqmbVCv9Bijw0fRWE77CSTx+5KgY1S20VOu3Xzey4qWyuZW6bL2QX0FzE7hTNrG3w1iqQclSFQYsomc7UQo9V29Y9lk/1Q1n0La1snuLFyVlET0Zwc7X0RfnInpC1P+inqi7hpadpel1mIqGXrwcukIcjv5PYu0OxiM6Sq+Ng5tKfxMVHkHiYhwKDZbnk15u8OxeEivraHhcT+f7NduJnBPoa4cq9aQEVm8ynch/opauEydm2rDIyL4coc+k3bQBDX3pJMdiUg7mh0MFBlZmGfsc1h/HTNiAG10fu38Fl8uFIhyc/olDrPbjVv54+TKXJ/36jGNPTHNsaXF6ffdwbgn75E5q35xsl+QUOQk6Eg5oEwU/ZuVaDne140So/V56qc/d39tK4Lwr+z4HBiBHRb0jw2/SiRO9kE6xmbWLPycXVc1loD9JcqJL3BOmfs29LHmseeaTAiVJuqXM4VQCgdPhZ/O6CMbacqr+9o/UDU8AcmIEXw5iunwcenToCVHxUvPuF9QApGwiz/sJdbup3DVmPXW/gJSD9cUgy3/eQIkmeHd3HFGwEd9KDSVfo+lfL9M0dA7xtw/wbkLg9Naz5uRW7H4V7+p1bNrWRNMj7qvnKgYg9w4VdYImsuhJJ+1XHyjKOs7iJKLEuoGCEtYtm+ST+0AS23YADb3oOmPsXe1EE8BSH74M3XSKqqCkkiRvsZu1WlzDnr+OUvZKDIEgtqeeZuMYTWtn9yna6Y7R2QPK6onzS8/8WgouXUh3ybu3HOL0Gz60HHDaG9n8axU9W8aPCf7iRE+MWA94HhkxXj6BiYZhHNsk1uVgqzHifQJDzb7DBQsWXP9gkiTNqcuXL09627kJ3DkaJU/VUHq2kUhXjHBXjPDxKC3/2ErlUgWnK8KZCwJ1QzH6ogzvt2OETllQWDkmu49D3DSxycXQvk5BYToVZkeXk3kiUsrG/DCGk2fQ9M8nqMmWThAF5bp92gLLjGEJ8BYtz5KJyaHzVIQ4CsYTVUyYU2Gkryko6acXVNfE3eSx4yHMlEZ5bdWEk2IGSFc9unWoGL9sYfcnZdQOJVoI/UOUmgfKZ7FwyHDd43TPRfbgNwvXMmVjXuhEoOJZPaLGco6Ke9nyccl70hQUVUVJOThXBGOvj90Vw0q52Vg01M3eZxEXGt6RM95TA4grA6AoE86DUIt2cOyDUmzFi36drtap3DAkSbr55qSrXPTGsfLKOfTvX/Dx7/ZQ830N7Ajhc+kxUvG5hZ3KPnlIOBZ2ElRPEaOWxvZbxM5ZULCO8tXp1rLTE6PzS4XlqzMsYUgJHGcAXG7cEybTV3C5FLji4GRrxqQcEh0JnAnGTkX3uwSPx1GKamh6YgpjTYoLz7fcgMCZoP/TuXCA5rdt9Np9NP04yzk4ApHjQs2d+Enkho1xj5TnpfyFBkrzQVlZw77G2QzaXBu3RkMvcmfvuZiNa9mXoN10QPFSMmI5kKpX0rS9NGtQdeW70j0iY8f4Uw6JCwkc1ZMeLxcW4d2NHP7T2C+kwHEEar57wt6hdCnUCYYBJEmat2Y9cIuuAI9/bxVrnm0jMaDgXltFw6t1lGhu3IvTBd+VfBVXjoqar465ITqY77TRfuX/wK2Boo4ec7bb23i7S8W3fQelBQCCS2YnFp7ME4xyXGh3qRnL3oneKG1Hh4o25OSiqmo6kX+2mbr9QzmH8z3ohePvmKI3yt5nG4nklbP7jR3jWsMTFyRQWf6TCkpUm9hZE7vfJtpaS9l37mXJulraTAdhRwk0BXE2tHDohWzlLQXJK0nI067zoHKDx7iHpRxi77xNQiun5a0GShfPZGcZOHFiXTaoOsWeCQLWDK8lpLu1O3sAj4ExcqFwnoY2waFzF3lwKw499tixDIEQoOS7cedB/MRegv2lVKwas7OBJNbnAte3PZPqTpckaQJCjFucM6W3Z6gqdyPMfot7QCBcOjXbK9HzSE9UOx7C8myifHW6ZaKuLGdTkULPxcS1JVuOReT1en71oUKB9wE2bdARF6OYQ8t+RSKE//V2PDsPsW/L0DKP4Vm4i7Ik2sjRMB714RUm0YvD64cF1tkAO58/jLPIPdQyUtA8bhTHwspyIUR3jFg3KB6D5SP6VkWvSbi1nscfLONAqpJDv2sZnyhhEgUJ1JWVNNSWkHy7kfr/6mdvewE7fvdHPn6rGPPXz/D4T/1YD7Vy4o3yCRJKDOB024jFHty3XNU7QfxIPbVHoOqNPZRPNHN+ukcYukYULh91jbJtN61rOfRZLLNzqEu+ZOLJhGMoiw2MRUk6L1ijJ+flaJRsqcAQYWofXkV1xEPDrsrxJR77TGIWeJZO0KMgSdKk2B8FRy0LnpL+OKHfhLFuQuye9TFuZdnTNG1LUN+0mTWvA84ASlEFLX9bdS2pvWpQ89Y+BnY0suZ7v0LLV1DucFPyeA0HatNrar07W9mT4yfwn8sI5OaSq3rx+U9QOXLMO5Uk2a/gXV2atUC9tqGJo4G9NLZWU/YbFXehG+0bJfzyrZpR45DashK8BOhIOFSOGBN0zjayvjxAfPgB45yfNff4R35ivN/34XvhBC2bstzEhwsSdA0VJHhUy3DTVTG2H+WDpQEaXz9MPJGktjKCWxXEe900tJ0YCiKC+LkEriJ9fKtbXMK8aOMq9KJNbh3aDSKw3mnkiT1xfG8cm+W1mIL4b7ayti5yrRv/QjNr7m3G/dQxPnj1Wrf1zK+lQ+yVzZTtjl09lnVwM0sOgvL9PZz9v6sy1lIeJc+LUbSQNtPkkjAYOWdMXV3Hic66Cd/udJskcgx+uVoujZGkOdEbwV/XyIFTcRzNi16QnpdiJS6hPdrEPn/lTU8C8xepVGrw5p7CLcKJ4S/fSvShQ5zYaczJtC6n3U9jRym7t09h/70htv5ViJIDh6jyKOl1wmc1nn7SGD+O2hum+jE/SuMJWh65dW7szrlmtv7ibbSdB2nZMoWkGLcp55yfzTUxfL89OsGEyQxSNpGGzfzqzy9y7NVswyWSJE2WfTZA6GuV1IxZuy+629i6cS8LXz197V7aH6ft/3qCoKsp/fc3EKft70xKtk3UCzo3ZMrTYarOpk069tnIHBXpmGZBgj8DvRECL+0luL+RrU8HGViWOSew9WEYM99HxS3UGhM9YRqfP0zuUy3seVwGbQC1qIqa7ycJHWmfUmpakQhzoMNNVXWxDNqSNBtSmfu5nUQHCTyja6jneVn3qIETaSP6+fD75/4UM5GB+yoF749rKCdM8NTsF+mYdkGCXBeaCtapZuobArSrpWzK1E/jxAgdjWNUT7xM7IZyTII7/MQf2MO+bRl6CKZIJCKE26eS//0WlaPhq29iXfcBgh9OMnd7fzrto+uJhjmZHyBJ0jCH+LlORGHJ+LkyKYHot7GTgokzKcwtGbhHyi+hZlcF4miA8Kzm055BQQLNoPIpH24FtOIaWt+oyrBG2CF2MEB7YR07NtwirW1hEW56hlD+L2lpnIVuXWERev0AsT8rt0erXSthx2uViH8IEO653sYC8+CbdOgN7LmhQw0C66Sf6sfWs37jVhqPxjM+NInuMP5fNM7630z84Gbuvc4yxXvv34r/5Ohlik57M9XPtd20ghuiJ0xj+XrWr1nFku9sJtA189+LfbaZ6rqb95m+UvotYh027tXGmPKhDtbFOE7e9ZYXZyMwW2upbY3NuECQDNxjqEU17KnViLwZIj5r96GZFCRQ0bcd4uMvLvPHdzPnLXbaDxDsKWX3Lt8NH2vJKGUT/XUtzb0+9ryWYWb0VAmLcFM1/k/clE42G908oBQO5aIuuO6W6NtaaJmFXoupEIkQjc+3YS8rxW2HCex/e/wwkh3FXxdEPFqDb2z98BlR8D5xjM/+nw9oWq2AYtD0wRfXlid+8Rkf/a6JEhGm+RfV7B1RGEQtfpoqLcLOl8PYN6F7RllUStX2Crwijp1aiHdaN/lrnI4Az+zuoXRbeebEPimB3evc8J4o51yArRvXs+b+FSxZU09k7gv/3ZDjCytGe7cLvWjMQ3K/RfSchbu0/DpFX7JR0Lf8Ev28P+tD8GTJwJ2BtraOltkIODeIWlxHa3NllmxdN1jKJvpKNbXv67zYXHdtJcE0iUSYxs1r2Lo/hvZQeTr/vHQDCKyzbxO94qZ4tRdPUSUNL1SMnk2bcoju9xP7Vg01GQpAiAtBtv6gDP+5GUwaSVqY3QIKx6yXV1S8a2vYF2zAIEZgTxvm1daoivFUDcUX/TQevwl1y3MU3AUuRD+oS8ckkZoqx+TA7hCuJ3ZQPuahXdhxYieD1P90FWsqA3M0Nyc7dWU5ddUluHotnHxv5nr08/D49sUo8VwPxpgLZ78fJNy/jh3brlO9cSJ5XipqfVza30jQnP43UwZuaRY5mK3PUHtKY0dgeglWhG0RPxeh7fVGqsvXsOJ7Wwm0O6AY+B7R5drlG0XYxCKdOPk6y4t81AVaqNswemKl6Gpj70ko2ZQhayECM9JG5JMk5Ew6pzjaAAAQoElEQVR/beJwbXVtWebiO6rHh09XEB1hop+OuBGqOr6yAmJHDk8voKUcoq/XE7wwvZtr+rwVlq/OllJ3MgTWyWYOf2lQvtY96ufx32xm1YNP4D9yhvZzFvbNqBSnaHg0SA4o6Kv06ff29ZsEn2sm2neTjj/SUFZFlpZgXK11kB4yeubgUA6KyVRrm4Di8VG5rIfQoalNTh1Jzk2VZo31TiPVDREsoPZ7IWpncd/Kah8+OSnrxum3MHsc1ELvmHG+Yem8+VZhJbuXZnicEhZmh4VYtBFj2l3oAutCDAsF4z5P5lZOroKm5YKwSXw5Mj+/grvYh+fXewm+V4HxY3eGN0987IE+h6SYTs7/oQI0OR58qz3Tn5PQnyB0NIa24RDGqA4NBe9Tx/j4KaAvSuPGCPHpHmNG0tcnkXJTZcxg7kVKkHQcBqYcxGbp+MN7644QeD3A4eNxHE+UQFOcgZ4EcUdF31DJnv9eOqVkS1nlaBgbdJwXDxB+spiqjEmerrOLWTgNSYLeKIdPWKhFBsZs7ztHxdjquzWGAm5zoruNretqiQy3fhL1rLi7HmV1A6dDdelsiABOJ5GzNlpZljK0Tg9mwkG7rzh7idLrSaVrq4scD8aybDXTwbkyAAjSuSuvPUQoi5djFCQJnoxhl7lv3BK6lE2soxOxqDz90CJsov+tmeB7Js5dPhr8NZOapCo+jRJJuDDqJ64YeNOkHMxYHKGVYHxrhmc4nZbnbB4fUApLqQuUUheY8a6uS11ajCfVSPhDi4qlU3/okIFbmh2LS2j4bQkNN/s8pBlRCis59h+V2KdqWV/5Lp43PuDYlvGtVdGbwLQVvEu1UTcd+51q1vwsxNV5Qj3VrHinGu+2E5z2l0wtAPUlMLscyJbSGMBJEO8WgBt1bOnSPDfGyoUEPjSx+ssnzCE/q/oSdJgO2n0GHiVO6KVGIlolvqIEjW8eJrylEqP4+idj/yndaq9w35JhO10b4KINeUlCz6zB/6lN0lVCXfMeqqaYHXFaC6tm8fg3mrJ4OUYhHO7qwUl5R9XkmAw5xi1J0hgCOxHHzlnI8sLMSe+dHhNLqGj5o2+Q2qOt/PHyF3zUXIqqeKl59zMuX77MR1MN2lyrTz7RBC9naBs0D/q4AJeLVlgAfRbWlSkefAac7hixLxW831aIvv4midVNtPzcg3O+EztfR188mTF/B9s0cfK02emenQOiJ4bZA9gDeGuPcfZ//huHfmjxq2d/dUNmmN/s489Iroa3wEWyxyI5jd4GGbglSRot5WB1WQjVg2dxpogpSPZeIpnjQsu4PGmo+E++nr2lfF3XCrlkr5kusNqjJFKgFpWOmEw0TMHlcqEIB6f/Rs0tT9eEt4Qg/k9BTH0HOx71ouR5qQp9xuXO1lGTm0SvSfh4dHyhipTA6k1CnmvKrbEbQ2CbMeJCo/y1FhrWaig5Ku6lbpREmNC5uY6cs3N81VNCSYYKgZOS68b4vo5rWtdHQblDgaTNwDQmFt6SXwlJkm6iAZt4t4OyyIs321jswADkqKh3ZIioTpzoBRvFY8xgfDsd/AXerDXT6U9w5lR6m6qnNmacVayoSrr+ebaZ5SmHSMN6Nrdmmd61P4R/7M8Ug4Z/PkHdygwHTNnEznUiFC/GXYJwzQpCv6nhwFsNlI6cpGdHCb5+mOjFKFFRybGHSsacv0AMQO4d6nXqrl/b/oZKOZgdCZx8g+KrhZ8EyR4bJ+WQ7EsiGD2MghPD/6P1NF/Iss/jGQaXl9Zw4t0mSsZ+j6Zw/AULFszgg87c5cuXx/8wJxdVzWWgP0lSAFPsVZGBW5Kk0frimD0Cda2evcrcBHeO4S5uzyP69GuG9w+NX2pG1la7/X6Qwx0Cb3UTNQ9M3LIfIMvs8ByV0tc+4vJrY36esom81EjnI3uoWz2FXoOh8W11bRMtv63E1dHIxscCNP7Gh7HLILfPxsnT0LQSql4rofTIVsoOZtqRgjIHFf5EVxs7XzxMfDJDBzkK3i272Z0pW1+/hdlloyw1MIa7Q1IOiS4LgYbb7Rr/HtWg4feXx8+DcWL4d4Qx/E2UTjaxyRSOnzFw3kKmM74vA7c0+/otou023rXGtNaw2h0hQu0WjmNjXYxhXvFS0dhETfEtks71Nuf0JrAcBXehO0uiCQVFTZc6dK4IxgZEuyuGlXKzsWioZnifRVxoeBdP/ssgLDNdM32lkbHV73QEeOb5EGJDE4f+JntKXeEIRI4LNffG1Ll1umN0fq7g3TLUvZ/vxpWnkMxTyO03Cb7UhrazifLrLpFTcLkU6HZwprMiLdtel1bS8o+VM9+RsLH6QLvPy8LhX22/ReyCBYVVrJtqTYb5dvyZSg0grgyAokwrmYsc45ZmnXMuQOMroRGZrIYJ7Athgq/78Tf58b8SINw1og+zL0bgZ2vYehRKf15Hw649tP7jaY7+HA4/W09bYt6XF5kXkt1xrJSWvYsacOW70l3QY69xyiFxIYGjeijyqOl0tbsbOfyn4XaFwGoPE+6YqFiMwL4QJS7AvVIfMTlLYJsR2l7azJqNfuwNLZwI1kxQG1mQvJKEPG2auaWnSnDpYgyLEb+7nFxylVxcrlyc82cw89dRsmhs4YoMu8rJRVVV6E8iJjN56UZXqcpRUe/IRb1LI3co8NjnQoS7VUq3VTHnz9g3+/gjpWwiL5Wx5O67Wf+6ieiPE2ooY8k9q6h/L9sYjcBxBGq+e5JDIaPJFrc0ywTW+QQD3x6dHlMkIgSPd6I+UE7Fdt/4gCAsQi/VEujbxKE3RuZkVnCv8qGnnuHtsxblHlkadG45WF3pwKtPMGknd5EHtxKlx3YY3RwUCAFKvht3HsRP7CXYX8ruVekvg7gQoHqzn1heKS3/fIhKz+j3xl4vo6wpdjWoO/vLuHf/iE0UN8YPfdT8tonyhzKXt71mAKfbRiw2cGeeHD/rBq6Aa1kp64Zy6iuF63j68cM8/XIZZfeV0/BGppKsmR5hFDSPG8WxsBwB2R48UgPp5esInNHL2OeWupx1D7iJXOzEFjqui0HqG8JoT+67MYVwbvbxR8rRKK3dQfk5PxS5UfJUfJuKOfxhYlza1KsGklifC1zLPNMaTpKBW5o1wgxS+2KQ6Lk4zqIk1b+wadhbg5GKETwYx9helzXxhP3eXvzvCNa9VTk+v3mOgpIzQNK+wcmYv4rEJRKfXELVqzDGtgxHUBYbGIuaOXPBwnlEuxYvcjRKtlRgtAepfTiCurJqdKEZ1Y37Loj1JOhIOGMCt4Kx/TRfbJ+9z2JetHEVerOP1c8qBX37CT4eef45GqW7TvPZrqnvTVtWgpdA+vc0Js2m097M088Hae8a7rkIsnlFGO9Kg4pd+6iZ63XMOSql25uoeL6Rx9cfRs13U/I3J9hXdr2Hqdvk+GM4XRGi/V7qClXSjZcY9l3r0MetdBjSZxKzwPO4e1rPWjJwS7NG0ato/VuN6r8K4nnj6NVZt057DKfIlz1bVMomevwM1mIfm1ZnKFZhx7EcdVyyD2n22KcaqX4phmdbOY4F3i3GxLmf87wYRQtpM00uCYORuU/U1XWc6KzL+DalsJzWTh81+3cSVub4avYliPW6KHkyUy71W5+yWMcoEERNC7Fh9HdfLa7j2L9m/h3fMFoJdb/9gJt2FlM4vuiJEnzzMOaAipoHTmKA0tdaKM+LEWwNEb1go//1PmoWn6G26jDuXYdoKFah3yLyd3sJ2yq5Aw5On0Df3kLNSrBO7sV/sBMWL4TuKE7BDvR80jPez/WgFmXPn+50myRyDH6Z4X43GXKMW5pV9idR4rk6xogWQvJzkzO/3sr6detHvx7eiv+sDQM2Vq+DttTAO+7xU5D4MEJc81H+wFTzTUuTkrKJvRMi2u3gfB7H0sqpeVyf+CEpR8V41Ie7O0xkqnMPhE2npaLPqGzW9VkfhjHzfVRM5+aYo2E8UUN59gH0mekzCb3eyN6jMaxEhMDLfoJnx1QyU3U2bdKxz0ZueOWvGypPp6K2YlJpYKfFiRGoqSWiVbHnjT3UFTmYX6poqkPsZBT1ER96KkGiT0C+G0++IDnAUKGZan7VXcyOXU00PVGA1ZVEzQP7ZCNb99j49h6idVcF7isCbTjfQJ9J+59yMbLlT0/ZxP4lSu73K1k3zTz+8/A5VLp1CawOE5bW4M0Dp88hN1/FVWBQ3tiUsfRj+m1JlDtyUfIyfIl7IgSP2hjVu2/shJOvkhyNkidqKO+LkLQUKl6twzeJym5qURU13z9D85F2ypdmn9k9lv3RYdrvKKFp0cxOe0JOjNDROEZ107QDguqZw2p0+Trl23XKtzfRknUjBe+Payh/ZyfBUxUYj9+mD645Cm7dO2e7t94LctjSaXhUR0VgddvkLvPhVVWURypx97RRfUWnqkhDURVKSkuwCnMRicME3haUBNbhVsDu7UEsNljuShBqDcNDhygpUKDHIu5oGEXpCYlOd4w4y6n7duZvj0iEOdDhpuqtTPMdJke2uKXZI2ziXQ7aMg+KHaHtaCdOCtSlOsq5MLFsZfsUN6UbDOiKYXZFaXulkcamAOH2MP6GAOLxFvbd6AknXzHq6hpaQyc49lYTlZNtZeZo+OqbWNd9gOCHk8yUJSxipkZV9eQD/dQ5xA4GaC+sY8eGef60l19Cza4KxNEA4R65qmLqHGwzjvhGCfoiJf3967Bxr/RAn0OupmK9345dWJquwNbXScwuQNcUnE9iJO5YTolHBRziHXHwLMd9JU6s14WxOl38xUnEsO4wKFkscPoF1rkYTmGW4jr9cUItYVxPNFA+g2qHMnBLs0fRMDYY0PE2ofeS6GVDY4uqQXlZLqHn6sd3B6bfiPfJfbQ8YtG4uZo3u0C5EiP430yMxhO0PuEm6cib1i1JK2HHa5WIfwgQ7pnE9oobX23VmDKVs8tpP0Cwp5Tdu3yzU6P5JlOLathTqxF5M0Rc/hlMUS7qYg13gYYrB0SinTPdKl4tQdv+d7GuDOD0JVG/4UZFEH8vhrJ2Hd48UO7S0LQCNAVEb4zw2XTAV/NcaPka7rtyQViceaedgW/p8H6AAx3/QedFG22lRqK1mUjvyHMRmAffpENvmPHM979IpVKDM/zNSNLk9MWJnIrQ2TNUezdHRS+rxJehnrNItLHzoIuGXaWIsyHMgnJZj1uSpKmzowRawtiKCyVXJffzGKZwoW9qoO4hDcdso/lIAtXtxlVQTMUjQ0HVMQk820g0z8PCfpMz7VAVOkHdSogf30swJuDPoC2CxAUbpaCYqp0bEb95mvoPFYwNNbxYbczJcIsM3NItSSTa2FoZhKUaztfW0RKourakSJIk6QayT9WzebdCUyhD3vSbQHaVS7ckRfNiqAnauxZSsb1CBm1Jkm6c3jD169bT2O6AsIiejKEUl7L8FinzLVvckiRJkjRSX4xgU4BYnhulx+RSYQVN28szLFe9OWTgliRJkqR5RHaVS5IkSdI8IgO3JEmSJM0jMnBLkiRJ0jwiA7ckSZIkzSMycEuSJEnSPCIDtyRJkiTNIzJwS5IkSdI8IgO3JEmSJM0jMnBLkiRJ0jwiA7ckSZIkzSMycEuSJEnSPCIDtyRJkiTNIzJwS5IkSdI8IgO3JEmSJM0jMnBLkiRJ0jwiA7ckSZIkzSMycEuSJEnSPCIDtyRJkiTNI/8/LP9MDRIuLWMAAAAASUVORK5CYII=;" value="" vertex="1">
+          <mxGeometry height="70" width="367.87" x="-1671.43" y="818" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-98" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;" target="25g8H-DaqNSgns0Cxm-p-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-101" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b style=&quot;&quot;&gt;* f(t,D)&amp;nbsp; &amp;nbsp; → &lt;/b&gt;frecuencia del término t en el documento.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;* |D|&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; → &lt;/b&gt;longitud del documento.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;* avgdl&amp;nbsp; &amp;nbsp;→ &lt;/b&gt;longitud media de los documentos.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;* IDF(t)&amp;nbsp; &amp;nbsp;→ &lt;/b&gt;importancia del término en todo el corpus.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;* k1&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;→ &lt;/b&gt;controla la saturación de la frecuencia.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b style=&quot;&quot;&gt;* b&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; → &lt;/b&gt;controla cuánto afecta la longitud del documento.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="331" x="-1652.99" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-102" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-101" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-97" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-1170" y="1090" as="sourcePoint" />
+            <mxPoint x="-1120" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-106" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font&gt;Ejemplo:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;D1 = &quot;Python es un lenguaje de programación&quot;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font&gt;D2 = &quot;Python Python Python es utilizado en programación web&quot;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;D3 = &quot;Java es un lenguaje de programación&quot;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;b style=&quot;&quot;&gt;&lt;font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Query:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;&lt;b&gt;&quot;Python programación&quot;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font&gt;BM25 favorecerá documentos que contenga &lt;b style=&quot;&quot;&gt;Python &lt;/b&gt;y &lt;b style=&quot;&quot;&gt;programación, &lt;/b&gt;pero tendrá en cuenta que repetir &lt;b style=&quot;&quot;&gt;Python &lt;/b&gt;muchas veces tiene &lt;b style=&quot;&quot;&gt;rendimientos decrecientes.&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="285" x="-1980" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-108" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-96" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=-0.001;exitY=0.433;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.522;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-106" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-1790" y="1000" as="sourcePoint" />
+            <mxPoint x="-1790" y="1033" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-112" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;" target="25g8H-DaqNSgns0Cxm-p-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-110" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&amp;nbsp;Tokenización del query&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="-1660" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-111" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="El query debe pasar por el &lt;b&gt;mismo preprocessing utilizado durante la indexación.&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="160" x="-1760" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-113" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;b&gt;Corpus &lt;/b&gt;es el conjunto completo de todos los textos sobres los que vas a buscar. En tu proyecto, el corpus es: todos los chunks (trozos) de todos los archivos .py y .md del repositorio de vLLM, ya troceados." vertex="1">
+          <mxGeometry height="90" width="200" x="-2260" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-116" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" target="25g8H-DaqNSgns0Cxm-p-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-114" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;b&gt;Indexar &lt;/b&gt;es procesar ese corpus por adelantado para poder buscar en él rapido después, en vez de tener que releer y analizar todo cada vez que alguien pregunta algo.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Es la misma idea que el índice de un libro: en vez de leer las 400 páginas cada vez que buscas dónde se habla de &quot;mitocondrias&quot;, el libro tiene un índice al final que dice &quot;mitocondrías&quot;: página 145, 203, 310, construirlo una vez, usando muchas veces.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="260" x="-2540" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-115" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;b&gt;query &lt;/b&gt;es la pregunta o texto de búsqueda que escribe el usuario. Es simplemente la palabra en inglés para &lt;b&gt;consulta.&amp;nbsp;&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/b&gt;&lt;div&gt;&lt;i&gt;&lt;b&gt;rag.search(query=&lt;/b&gt;&quot;How to configure the OpenIA server?&quot;, k=5&lt;b&gt;)&lt;/b&gt;&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="210" x="-2440" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-117" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.198;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;exitX=0.831;exitY=0.003;exitDx=0;exitDy=0;exitPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-119" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;" target="25g8H-DaqNSgns0Cxm-p-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-118" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;b&gt;tokenizar &lt;/b&gt;partir un texto en piezas más pequeñas(normalmente palabras) para poder trabajar con ellas por separado, en vez de tratar el texto como un bloque único. &lt;b&gt;&lt;i&gt;(nota que normalmente al tokenizar también se pasa a minúsculas y se quita la puntuación eso ya depende de cómo esté configurado el tokenizador).&lt;/i&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="130" width="240" x="-2220" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-122" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-120" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;b&gt;stemming &lt;/b&gt;reducir la palabra a su raíz, quitando sufijos, para que variantes de una misma palabra cuenten como &quot;la misma&quot; a buscar." vertex="1">
+          <mxGeometry height="70" width="200" x="-2010" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-123" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font&gt;Ejemplo:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&quot;retrieving&quot;&amp;nbsp; → &quot;retriev&quot;&lt;/div&gt;&lt;div&gt;&quot;retrieved&quot;&amp;nbsp; &amp;nbsp;→ &quot;retriev&quot;&lt;/div&gt;&lt;div&gt;&quot;retriever&quot;&amp;nbsp; &amp;nbsp;→ &quot;retriev&quot;&lt;/div&gt;&lt;div&gt;&quot;retrieval&quot;&amp;nbsp; &amp;nbsp;→ &quot;retriev&quot;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="-1980" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-125" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-123" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.528;entryY=0.015;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-120" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-1911" y="1364" as="sourcePoint" />
+            <mxPoint x="-1940" y="1350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-126" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;b&gt;Todas &lt;/b&gt;se reducen a la raíz &quot;retriev&quot;. ¿Por qué importa? Porque si el corpus tiene la palabra &lt;b&gt;&quot;retrieval&quot;&amp;nbsp;&lt;/b&gt;&amp;nbsp;y el usuario en su query escribe &quot;&lt;b&gt;retrieving&quot;, &lt;/b&gt;sin stemming &lt;b&gt;BM25&amp;nbsp;&lt;/b&gt;&amp;nbsp;las trataría como palabras &lt;b&gt;completamente distintas &lt;/b&gt;(son strings diferentes) y no encontraría la coincidencia, aunque para un humano sea obviamente la misma idea." vertex="1">
+          <mxGeometry height="120" width="260" x="-1955" y="1385" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-127" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.478;entryY=0.964;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" target="25g8H-DaqNSgns0Cxm-p-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-129" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-130" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;corpus &lt;br&gt;(todos los chunks)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="39.38" width="115" x="-1537.5" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-131" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.514;entryY=0.019;entryDx=0;entryDy=0;entryPerimeter=0;" target="25g8H-DaqNSgns0Cxm-p-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-132" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;--tokenize&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="70" x="-1515" y="208.75" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-133" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-136">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-134" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;tokenized_corpus&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22.5" width="115" x="-1540" y="248.75" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-135" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-138">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-136" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;--index()&lt;/b&gt;" vertex="1">
+          <mxGeometry height="18.75" width="57.5" x="-1511.25" y="287.5" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-144" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="25g8H-DaqNSgns0Cxm-p-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-138" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;indice BM25 (guardado)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="82.5" x="-1523.75" y="327.5" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-146" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-143" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;query&lt;br&gt;(pregunta usuario)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="-1542.5" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-145" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;--tokenize&lt;/b&gt;" vertex="1">
+          <mxGeometry height="18.75" width="57.5" x="-1511.25" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-148" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;tokenized_query&lt;/b&gt;" vertex="1">
+          <mxGeometry height="18.75" width="100" x="-1532.5" y="481.25" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-149" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-148">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-153" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-150" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;--.retrieve(contra el índice)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22.5" width="160" x="-1562.5" y="523.75" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-151" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25g8H-DaqNSgns0Cxm-p-150">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25g8H-DaqNSgns0Cxm-p-152" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;top-k chunks más relevantes&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="-1532.5" y="570" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
