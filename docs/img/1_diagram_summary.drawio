@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="meT-X8BSzV5CILLARwod">
-    <mxGraphModel dx="3480" dy="1613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3748" dy="2712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -117,7 +117,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="LQwCk8dbOmhS_KGoKl8P-26" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;text-align: center;&quot;&gt;La usas cuando TU comando search genera resultados.&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Cuando ejecutas search_dataset, y tú mismo (tu código) genera el resultado de &quot;para esta pregunta, encontré estos fragmentos&quot;.&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Fíjate: &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;todavía no hay respuesta generada por el LLM&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;, solo los fragmentos encontrados. Por eso esta clase no tiene campo &lt;/span&gt;&lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;answer&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;.&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="155" width="280" x="-450" y="-95" as="geometry" />
+          <mxGeometry height="155" width="280" x="-450" y="-120" as="geometry" />
         </mxCell>
         <mxCell id="LQwCk8dbOmhS_KGoKl8P-27" edge="1" parent="1" source="LQwCk8dbOmhS_KGoKl8P-26" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1.016;exitY=0.491;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="LQwCk8dbOmhS_KGoKl8P-9" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -162,10 +162,10 @@
           <mxGeometry height="160" width="360" x="320" y="200" as="geometry" />
         </mxCell>
         <mxCell id="LQwCk8dbOmhS_KGoKl8P-37" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;text-align: center;&quot;&gt;BaseChunker&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Una &lt;b&gt;clase abstracta&lt;/b&gt; es la forma de decirle a Python: esta clase existe solo para que otras hereden de ella y la completen, nadie deberia poder crear una instancia de ella.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Obligas que cualquier chunker nuevo que crees en el futuro(Ejm: JsonChunker) tenga que implementar obligatoriamente el método &lt;b&gt;chunk&lt;/b&gt;.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;* &lt;b&gt;minimum_threshold &lt;/b&gt;por debajo de este tamaño, un chunk se considera &quot;demasiado pequeño&quot; y se intenta fusionar con el siguiente.&lt;/div&gt;&lt;div&gt;* &lt;b&gt;heading_pattern &lt;/b&gt;el patron compilado que detecta encabezados(#, ##...)&lt;/div&gt;&lt;div&gt;* &lt;b&gt;overlap_size &lt;/b&gt;cuántos caracteres se solapan entre chunks consecutivos.&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="200" width="400" x="-1980" y="-1010" as="geometry" />
+          <mxGeometry height="200" width="400" x="-1802.5" y="-1640" as="geometry" />
         </mxCell>
-        <mxCell id="LQwCk8dbOmhS_KGoKl8P-39" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;BaseChunker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&amp;nbsp;+ minimum_threshold&amp;nbsp;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-&amp;gt; int&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ overlap_size&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-&amp;gt; int&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ chunk(contenido: str, file_path: str,&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;max_chunk_size:int) -&amp;gt; List[MinimalSoruce]&lt;/span&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="110" width="437" x="-1330" y="-940" as="geometry" />
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-39" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;BaseChunker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&amp;nbsp;+ minimum_threshold:&amp;nbsp;int&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ overlap_size: int&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ chunk(content: str, file_path: str,&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;max_chunk_size:int) -&amp;gt; List[MinimalSoruce]&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- save_fragment(fragments: list, text: str, start_offset: int) -&amp;gt; int&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="437" x="-1330" y="-940" as="geometry" />
         </mxCell>
         <mxCell id="LQwCk8dbOmhS_KGoKl8P-40" edge="1" parent="1" source="i43wYCJkIFNmSQkzB6LR-1" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.356;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.581;exitY=-0.005;exitDx=0;exitDy=0;exitPerimeter=0;" target="LQwCk8dbOmhS_KGoKl8P-39" value="es">
           <mxGeometry relative="1" width="160" as="geometry">
@@ -179,20 +179,17 @@
             <mxPoint x="-1102" y="-640" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LQwCk8dbOmhS_KGoKl8P-43" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PythonChunker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- rag_questions: List[AnsweredQuestion&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;| UnansweredQuestion]&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="80" width="250" x="-1070" y="-780" as="geometry" />
+        <mxCell id="LQwCk8dbOmhS_KGoKl8P-43" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PythonChunker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="70" width="110" x="-1040" y="-760" as="geometry" />
         </mxCell>
-        <mxCell id="i43wYCJkIFNmSQkzB6LR-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MarkdownChunker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ heading_pattern&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;- rag_questions: List[AnsweredQuestion&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;| UnansweredQuestion]&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;_save_fragment(self, fragments: list, text: str, start_offset: int)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; font-size: 12px;&quot;&gt;_split_long_text( self, text: str, base_start: int, max_chunk_size: int) -&amp;gt; List[dict]&lt;/span&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="110" width="437" x="-1530" y="-780" as="geometry" />
+        <mxCell id="i43wYCJkIFNmSQkzB6LR-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MarkdownChunker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ heading_pattern&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;split_long_text(text: str, base_start: int, max_chunk_size: int) -&amp;gt; List[dict]&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="400" x="-1460" y="-760" as="geometry" />
         </mxCell>
         <mxCell id="i43wYCJkIFNmSQkzB6LR-3" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;MarkdownChunker&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;** &lt;b&gt;_save_fragment() &lt;/b&gt;su trabajo recibe un trozo de texto y la posición donde empieza, calcula dónde termina (&lt;b&gt;start + longitud&lt;/b&gt;), lo guarda en la lista de fragmentos como diccionario, devuelve la posición final.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;**&amp;nbsp;&lt;b&gt;_split_long_text() &lt;/b&gt;el corazón de la partición en 3 niveles, se llama solo cuando una sección es más grande que &lt;b&gt;max_chunk_size.&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: bold; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;Nivel frases: &lt;/b&gt;divide el texto por puntos, reconstruyendo cada frase &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;compelta(con su punto incluido) y acumulándolas en &lt;b&gt;temp_chunk &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;hasta acercarse al límite.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;Nivel palabras &lt;/b&gt;si una frase individual ya es más grande que &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;max_chunk_size, &lt;/b&gt;la divide por espacios y acumula palabras en &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;emergency_chunk.&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: bold; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;Nivel caracteres &lt;/b&gt;si una palabra indivodual ya es más grande que &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;max_chunk_size &lt;/b&gt;(URL larga, etc), le trocea directamente por &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;posición &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;con &lt;b&gt;word[i:i+max_chunk_size], &lt;/b&gt;garantizando que ningún &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;chunk final &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;supera el límite bajo ninguna circunstancia.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;**&amp;nbsp;&lt;b&gt;chunk() &lt;/b&gt;usa &lt;b&gt;finditer&amp;nbsp;&lt;/b&gt;&amp;nbsp;sobre &lt;b&gt;heading_pattern&amp;nbsp;&lt;/b&gt;&amp;nbsp;para encontrar todas las posiciones de encabezados, y construye desde cada encabezado hasta el siguiente (o hasta el final del archivo).&lt;/div&gt;" vertex="1">
-          <mxGeometry height="300" width="400" x="-1980" y="-780" as="geometry" />
+          <mxGeometry height="300" width="400" x="-1802.5" y="-1410" as="geometry" />
         </mxCell>
         <mxCell id="i43wYCJkIFNmSQkzB6LR-4" parent="1" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;text-align: center;&quot;&gt;PythonChunker&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;* &lt;b&gt;minimum_threshold &lt;/b&gt;por debajo de este tamaño, un chunk se considera &quot;demasiado pequeño&quot; y&amp;nbsp;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="370" width="420" x="-750" y="-1020" as="geometry" />
-        </mxCell>
-        <mxCell id="25g8H-DaqNSgns0Cxm-p-1" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="-530" y="-30" as="geometry" />
+          <mxGeometry height="370" width="420" x="-1362.5" y="-1620" as="geometry" />
         </mxCell>
         <mxCell id="25g8H-DaqNSgns0Cxm-p-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Repositorio vLLM" vertex="1">
           <mxGeometry height="20" width="120" x="-1062.5" y="210" as="geometry" />
@@ -390,7 +387,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="25g8H-DaqNSgns0Cxm-p-67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Usuario&lt;br&gt;&lt;b&gt;¿Cómo configurar OAuth?&quot;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="52.5" width="140" x="-1396.25" y="362.5" as="geometry" />
+          <mxGeometry height="52.5" width="115" x="-1383.75" y="356" as="geometry" />
         </mxCell>
         <mxCell id="25g8H-DaqNSgns0Cxm-p-68" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="25g8H-DaqNSgns0Cxm-p-71">
           <mxGeometry relative="1" as="geometry" />
@@ -507,13 +504,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="25g8H-DaqNSgns0Cxm-p-110" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&amp;nbsp;Tokenización del query&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="90" x="-1660" y="1160" as="geometry" />
+          <mxGeometry height="30" width="90" x="-1730" y="1180" as="geometry" />
         </mxCell>
         <mxCell id="25g8H-DaqNSgns0Cxm-p-111" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="El query debe pasar por el &lt;b&gt;mismo preprocessing utilizado durante la indexación.&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="160" x="-1760" y="1240" as="geometry" />
+          <mxGeometry height="70" width="160" x="-1790" y="1250" as="geometry" />
         </mxCell>
         <mxCell id="25g8H-DaqNSgns0Cxm-p-113" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;b&gt;Corpus &lt;/b&gt;es el conjunto completo de todos los textos sobres los que vas a buscar. En tu proyecto, el corpus es: todos los chunks (trozos) de todos los archivos .py y .md del repositorio de vLLM, ya troceados." vertex="1">
-          <mxGeometry height="90" width="200" x="-2260" y="1240" as="geometry" />
+          <mxGeometry height="90" width="210" x="-2260" y="1240" as="geometry" />
         </mxCell>
         <mxCell id="25g8H-DaqNSgns0Cxm-p-116" edge="1" parent="1" source="25g8H-DaqNSgns0Cxm-p-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" target="25g8H-DaqNSgns0Cxm-p-113">
           <mxGeometry relative="1" as="geometry" />
@@ -610,6 +607,74 @@
         </mxCell>
         <mxCell id="25g8H-DaqNSgns0Cxm-p-152" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;top-k chunks más relevantes&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="100" x="-1532.5" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-2" edge="1" parent="1" source="pQLKY-sql46gv8xA9iIH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" target="pQLKY-sql46gv8xA9iIH-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pQLKY-sql46gv8xA9iIH-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;b&gt;RAG&lt;/b&gt;&amp;nbsp;es un modelo de lenguaje &lt;b&gt;se entrena una vez y luego &quot;solo sabe&quot; lo que vio en ese entrenamiento&lt;/b&gt;. Si quieres que responda sobre algo nuevo (como el código fuente de vLLM, que seguro no estaba en su entrenamiento), tienes 2 opciones: reentrenarlo (caro, lento) o darle acceso a una fuente externa de información en el momento de responder. &lt;b&gt;Eso segundo es RAG.&lt;/b&gt;" vertex="1">
+          <mxGeometry height="120" width="270" x="-1452.99" y="1166" as="geometry" />
+        </mxCell>
+        <mxCell id="pQLKY-sql46gv8xA9iIH-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Indexing&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Antes de nada, organizas tus documentos (el repo de vLLM) en una estructura que se pueda buscar rápido. Aquí es donde entra el chunking: partir archivos grandes en trozos manejables.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="180" x="-1652.99" y="1351" as="geometry" />
+        </mxCell>
+        <mxCell id="pQLKY-sql46gv8xA9iIH-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Retrieving&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;Dada una pregunta el usuario, busca en ese índice los trozos más relevantes. Aquí es donde vive &lt;b&gt;BM25/TF-IDF &lt;/b&gt;en tu proyecto.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="170" x="-1462.99" y="1356" as="geometry" />
+        </mxCell>
+        <mxCell id="pQLKY-sql46gv8xA9iIH-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Retrieving&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;Dada una pregunta el usuario, busca en ese índice los trozos más relevantes. Aquí es donde vive &lt;b&gt;BM25/TF-IDF &lt;/b&gt;en tu proyecto.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="170" x="-1282.99" y="1356" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-1" edge="1" parent="1" source="pQLKY-sql46gv8xA9iIH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.527;entryY=0.001;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;exitX=0.496;exitY=1.003;exitDx=0;exitDy=0;exitPerimeter=0;" target="pQLKY-sql46gv8xA9iIH-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1317.99" y="1291" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-3" edge="1" parent="1" source="pQLKY-sql46gv8xA9iIH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.526;entryY=-0.009;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" target="pQLKY-sql46gv8xA9iIH-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Generating&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;El LLM lee ese contexto + la pregunta y genera una respuesta en lenguaje natural.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="150" x="-1102.99" y="1361" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-5" edge="1" parent="1" source="pQLKY-sql46gv8xA9iIH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.519;entryY=0.009;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="aI3Ot4zGlF9XPwriC0AH-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-10" edge="1" parent="1" source="aI3Ot4zGlF9XPwriC0AH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;" target="aI3Ot4zGlF9XPwriC0AH-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-16" edge="1" parent="1" source="aI3Ot4zGlF9XPwriC0AH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="aI3Ot4zGlF9XPwriC0AH-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;" value="&lt;b&gt;BM25 vs TD-IDF&lt;/b&gt;&lt;br&gt;Ambos son &lt;b&gt;algoritmos de retrievel&lt;/b&gt; (basado en palabras exactas, no en significado).&amp;nbsp;" vertex="1">
+          <mxGeometry height="61" width="170" x="-962.99" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-12" edge="1" parent="1" source="aI3Ot4zGlF9XPwriC0AH-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" target="aI3Ot4zGlF9XPwriC0AH-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;" value="&lt;b&gt;BM25&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="40" x="-972.99" y="1171" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="Es una evolución que &lt;b&gt;añade saturación de frecuencia&lt;/b&gt; (que una palabra aparezca 50 veces no es más relevante que si aparece 1 vez) y normalización por longitud de dcumento. Es más robusto en la práctica.&amp;nbsp;" vertex="1">
+          <mxGeometry height="92" width="220" x="-1002.99" y="1224" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;" value="&lt;b&gt;TF-IDF&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="40" x="-727.99" y="1171" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="Pondera palabras por frecuencia en el documento vs. rareza en el corpus," vertex="1">
+          <mxGeometry height="50" width="150" x="-772.99" y="1221" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-17" edge="1" parent="1" source="aI3Ot4zGlF9XPwriC0AH-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.436;entryY=0.023;entryDx=0;entryDy=0;entryPerimeter=0;" target="aI3Ot4zGlF9XPwriC0AH-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;" value="&lt;b&gt;Recll@k&lt;/b&gt;&lt;div&gt;&amp;nbsp;Mide, de las fuentes correctas que debería haber encontrado, qué fracción efectivamente aparece entre las &lt;b&gt;top-k &lt;/b&gt;que devolviste. &lt;b&gt;No mide precisión (cuántas de las que devolviste son relevantes), &lt;/b&gt;solo cobertura. Por eso @1, @2, @5... : cuanto más alto el k, más fácil des que acierte (da mas oportunidades), así que &lt;b&gt;recall@10 &lt;/b&gt;siempre será &amp;gt;= &lt;b&gt;recall@1.&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="270" x="-932.99" y="1351" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;" value="&lt;b&gt;El truco del overlap del 5%&lt;/b&gt;&lt;div&gt;&amp;nbsp;Como los chunks no coinciden exactamente con la ubicación &lt;b&gt;&quot;ground truth&quot; &lt;/b&gt;(depende de cómo trocees el texto), en vez de exigir coincidencia exacta de índices, se acepta que haya al menos un 5% de solapamiento entre el rango que tú devolviste y el rango correcto.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="205" x="-652.99" y="1351" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;" value="&lt;b&gt;Por qué Qwen3-0.6B y el truco /no_think&lt;/b&gt;&lt;br&gt;&lt;div&gt;&amp;nbsp;Es un modelo pequeño (0.6B parámetros) pensado para poder correr en CPU/GPU modesta, parte de la familia Qwen3 que tiene modo de &quot;razonamiento&quot; activable (piensa paso a paso dentro de &lt;b&gt;&amp;lt;think&amp;gt;...&amp;lt;/think&amp;gt; &lt;/b&gt;antes de responder).&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="245" x="-932.99" y="1511" as="geometry" />
+        </mxCell>
+        <mxCell id="aI3Ot4zGlF9XPwriC0AH-22" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b style=&quot;&quot;&gt;Ingestion&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&amp;nbsp;+ chunkers: dict&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&amp;nbsp;+ raw_data_path: str&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ ensure_repo_extracted -&amp;gt; None&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ ingest(max_chunk_size: int) -&amp;gt; List[MinimalSoruce]&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="290" x="-840" y="-930" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
